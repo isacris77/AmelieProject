@@ -1,0 +1,58 @@
+
+
+
+
+h1{
+    font-family: 'alako';
+    font-size: 1.5rem;
+    
+}
+
+
+ h2 {
+    font-family:'Alako';
+    font-size: 1.25rem;
+    
+}
+
+h3{
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+body{
+    font-family: 'raleway';
+    font-size: 0.875rem;
+    color: #111111; 
+   
+  
+  
+}
+
+.quote{
+    font-family: 'alako';
+    color: #111111; 
+    font-size: 1.25rem ;
+    border: 2px solid #FF1A7F;
+    border-radius: 25px;
+    text-align: center;
+   
+   
+}
+.lead{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.lead2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+svg{
+    color: #25fde9;
+}
+
+
+
+
