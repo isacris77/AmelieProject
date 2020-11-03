@@ -46,3 +46,60 @@ svg{
 
 
 
+
+.a-img-txt{
+  display:grid; 
+}
+
+/* les enfants se superposent */
+.a-img-txt>*{
+  grid-area:1/1/-1/-1; 
+  /* raccourci pour grid-row et grid-column */
+}
+
+/* le texte */
+.a-txt{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  opacity:0;
+  filter:invert(0); /* antibug si effet sur a-img */
+  transition:opacity .8s;
+}
+
+/* les couleurs c1 et c2 */
+.c1{
+    background:#ff6600cc; /* avec alpha */
+}
+
+.c2{
+    background:#6600ffcc; /* avec alpha */
+}
+
+/* le survol */
+.a-txt:hover{
+  opacity:1;
+}
+.a-img-txt:hover .a-img{
+  filter:invert(0);
+}
+/* la déco */
+.essai{
+ 
+  margin:24px;
+  font-family:'raleway';
+  font-size:21px;
+
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+a{
+  text-decoration:none;
+}
+
+
+
