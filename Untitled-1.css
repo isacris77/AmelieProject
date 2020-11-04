@@ -1,8 +1,8 @@
 /*
 Project : Starter CSS
-Author	: Nom Prénom
+Author	: Cristini Prénom
 Version	: v.1.0.0
-Date 	: 12/04/2018
+Date 	: 04/11/2020
 */
 
 /*-----------------------------------------------------------*/
@@ -49,7 +49,6 @@ h6, .h6-like {
 }
 h1, .h1-like {
 	font-size: 2em;
-
 	text-transform: uppercase;
 }
 h2, .h2-like {
