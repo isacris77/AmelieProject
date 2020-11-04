@@ -45,7 +45,7 @@ svg{
 }
 
 
-
+/* *********************************************images */
 
 .a-img-txt{
   display:grid; 
@@ -99,5 +99,131 @@ img{
 }
 a{
   text-decoration:none;
+} */
+
+/* *********************form */
+* {
+  box-sizing: border-box;
 }
 
+/* 1- positionning the 2 divs */
+form {
+	display: flex;
+}
+form > div {
+	flex: 1;
+	min-width: 0; /* fix for min-width: auto */
+}
+form > div + div {
+	margin-left: 1em;
+}
+
+/* 2- fluid inputs */
+.divform > p {
+	display: flex;
+}
+form input:not([type=submit]) {
+	flex: 1; /* fluid width */
+	display: block; /* IE fix */
+	min-width: 0; /* fix for min-width: auto */
+}
+
+/* 3- fluid textarea */
+.divform + .divform {
+	display: flex;
+	flex-direction: column;
+}
+textarea {
+	flex: 1; /* fluid height */
+	display: block; /* IE fix */
+}
+
+
+/* Decoration */
+
+ form{
+	max-width: 1000px;
+	margin: auto;
+	padding: 1em;
+	background:rgba(0,0,0,.1);
+	color: red;
+	font-size: 1.4em;
+	font-family: georgia, "trebuchet ms", arial, serif;
+}
+
+
+form > div {
+	padding: 1em;
+	background: #fff;
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+input,
+textarea {
+	padding: .3em;
+	border: 1px solid #555;
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: inherit;
+  background: rgba(0,0,0,.02);
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+input[type="submit"] {
+	padding: .3em 1em;
+	background: #555;
+	border: none;
+	color: #fff;   
+	border-radius: 4px;
+	cursor: pointer;
+}
+label {
+	width: 5em;
+	margin-right: .5em;
+  text-align: left;
+  display: inline;
+}
+input[type="submit"] {
+	margin-left: auto;
+}
+div:first-child p:first-child {
+	justify-content: flex-end;
+}
+textarea {
+	resize: vertical;
+	color: #aaa;
+}
+.divform > p:first-child {margin-top: 0;}
+.divform > p:last-child {margin-bottom: 0;}
+small {
+	font-size: 0.8rem;
+	color: #aaa;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+	form {
+		flex-direction: column;
+	}
+	form p {
+		display: block;
+	}
+	label {
+		display: block;
+		width: auto;
+		text-align: left;
+	}
+	form > div {
+		width: auto;
+	}
+	form > div + div {
+		margin-left: 0;
+		margin-bottom: 1em;
+		order: -1;
+	}
+	input {
+		width : 100%
+	}
+}
