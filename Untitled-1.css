@@ -30,12 +30,7 @@ body {
 	background-color: #fff;
 }
 
-.row {
-   
-	display: flex;
-	justify-content: flex-end;
-   
-}
+
 
 
 /* Typographie */
@@ -52,16 +47,16 @@ h6, .h6-like {
 	
 }
 h1, .h1-like {
-	font-size: 1.75em;
-	font-family: 'Alako';
+	font-size: 3em;
+	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 h2, .h2-like {
-	font-size: 1.25em;
-	font-family: 'Alako';
+	font-size: 2.25em;
+	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 h3, .h3-like {
-	font-size: 1.15em;
-	font-family: 'Alako';
+	font-size: 1.50em;
+	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
@@ -82,8 +77,8 @@ p {
 }*/
 
 .grid {
-	margin-left: -10px;
-	margin-right: -10px;
+	
+
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -539,6 +534,10 @@ n, s, m, l = none, small, medium, large
 	margin-bottom: 60px!important;	
 }
 
+.mrs{
+	margin-right: 20px !important;
+}
+
 .pan {
 	padding: 0px!important;
 }
@@ -577,6 +576,10 @@ n, s, m, l = none, small, medium, large
 }
 .pbl {
 	padding-bottom: 60px!important;	
+}
+
+.prs{
+	padding-right: 20px !important;
 }
 
 .txt-right {
@@ -657,42 +660,19 @@ header{
 }
 /* nav */
 /*--------------------------*/
-.menu { /* on masque le menu à l'état initial */
-	height: 0;
-	opacity: 0;
-	overflow: hidden;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.menu-collapse {
-	height: auto;
-	opacity: 1;
-}
-.menu ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	
-}
-.menu a {
-	display: block;
+
+.navbar-light .navbar-nav .nav-link {
 	color:black;
-	padding: 1em;
-	text-align: center;
+	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;  ;
+	font-size: 0.875rem;
 }
-.menu .current {
-	color: #fff;
-	background-color: #cf5fd3;
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+	border-bottom: 2px solid #89e7ff ;
 }
 
-/* btn menu */
-/*--------------------------*/
-.btn-menu {
-	position: absolute;
-	top: 20px;
-	right: 10px;
-	color: #fff;
-}
+
+
+
 /* main */
 /*--------------------------*/
 /*.banner-box {
@@ -700,7 +680,7 @@ header{
 }*/
 
 .banner{
-	background-image: url('../img/img-01.jpg');
+	background-image: url('Images/pawel-czerwinski-oNcFi_dYz_0-unsplash.jpg');
 }
 
 .banner-app{
@@ -714,20 +694,62 @@ header{
 	background-position: 69% 50%;
 }
 
+/* section1 */
+.collage2{
+	justify-content: flex-end;
+}
 
-	.team-tittle {
-		font-style: italic;
-		text-transform: uppercase;
-		font-style: 1.25em;
-		margin: 10px 0 0 0;
-	}
+.collage1{
+	flex-direction: column;
+	align-self: center;
+}
 
-	.team-detail{
+.collage2 h2{
+	font-size: 1.25em;
+	font-family: 'Alako','raleway' Georgia, 'Times New Roman', Times, serif;
+}
 
+.collage1 p{
 	font-style: italic;
-	font-size: 1.15em;	
+}
 
-	}
+/* section2 */
+
+#section2 h2{
+	text-align: center;
+}
+
+.presentation {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.presentation ul{
+	list-style-type: none;
+}
+.presentation h3{
+	text-align: center;
+	
+}
+
+.bouton{
+	text-align: center;
+	
+}
+
+.btn{
+	height: 50px;
+	width: 150px;
+}
+
+
+
+
+
+
+
+
 /* footer */
 /*--------------------------*/
 #footer {
