@@ -59,9 +59,10 @@ h3, .h3-like {
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
-p {
+p, li {
 	font-size: 0.875rem;
 	margin: 0 0 0.625em 0;
+	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -448,28 +449,121 @@ p {
 
 /* buttons */
 /*--------------------------*/
- .btn {
-	position: relative;
-	display: inline-block;
-	background-color: #f36;
-	color: #fff;
-	border: none;
-	border-radius: 3px;
-	padding: 0 1.25em;
-	line-height: 2.5;
+.content {
+	padding: 2em 1em 5em;
+	z-index: 1;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.content h2 {
+	margin: 0 0 2em;
 }
 
-.btn--small {
-	font-size: 0.75em;
+.box {
+	padding: 4.5em 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
-.btn--large {
-	font-size: 1.5em;
+
+
+/* Common button styles */
+.button {
+	float: left;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
 }
-.btn--secondary {
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+
+.bg-1 .button {
+	color: black;
+	border-color: #b5b1d4 ;
+}
+
+/* Borders */
+
+.button--border-thick {
+	border: 3px solid;
+}
+
+.button--tamaya {
+	overflow: hidden;
+	color: #ff1a7f;
+	min-width:150px;
+}
+
+.button--tamaya::before,
+.button--tamaya::after {
+	content: attr(data-text);
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	background: #7986cb;
 	color: #fff;
-	background-color: #f36;
-	border: 2px solid #f36;
-} 
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--tamaya.button--inverted::before,
+.button--tamaya.button--inverted::after {
+	background: #fff;
+	color: #37474f;
+}
+.button--tamaya::before {
+	top: 0;
+	padding-top: 1em;
+}
+.button--tamaya::after {
+	bottom: 0;
+	line-height: 0;
+}
+.button--tamaya > span {
+	display: block;
+	-webkit-transform: scale3d(0.2, 0.2, 1);
+	transform: scale3d(0.2, 0.2, 1);
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--tamaya:hover::before {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+.button--tamaya:hover::after {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.button--tamaya:hover > span {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
 
 
 /* helpers */
@@ -484,9 +578,6 @@ p {
 .v-bottom {
 	vertical-align: bottom;
 }
-
-
-
 
 /*
 m = margin
@@ -676,6 +767,10 @@ header{
 }
 .navbar-light:hover .navbar-nav:hover .nav-link:hover {
 	background: #a6d4d1 ;
+}
+
+.dropdown-menu{
+	background:#f2b3c6 ;
 }
 
 
@@ -962,7 +1057,8 @@ header{
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	color:#fff;
+	color:black;
+	font-weight: 800;
 	opacity:0;
 	filter:invert(0); /* antibug si effet sur a-img */
 	transition:opacity .8s;
