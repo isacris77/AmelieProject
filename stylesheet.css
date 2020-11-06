@@ -460,7 +460,7 @@ p, li {
 }
 
 .box {
-	padding: 4.5em 0;
+	
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -834,10 +834,7 @@ header{
 .presentation ul{
 	list-style-type: none;
 }
-.presentation h3{
-	text-align: center;
-	
-}
+
 
 .bouton{
 	text-align: center;
@@ -847,6 +844,11 @@ header{
 .btn{
 	height: 50px;
 	width: 150px;
+}
+
+.box{
+	flex-direction: column;
+	align-items: center;
 }
 
 
@@ -1141,24 +1143,27 @@ header{
 	  max-width: 1000px;
 	  margin: auto;
 	  padding: 1em;
-	  background:rgba(0,0,0,.1);
-	  color: red;
+	  background:url('Images/AdobeStock_188685707.jpeg');
+	  color:black;
 	  font-size: 1.4em;
-	  font-family: georgia, "trebuchet ms", arial, serif;
+	  font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .form-control{
+	border: 1px solid black;
   }
   
   
   form > div {
 	  padding: 1em;
 	  background: #fff;
-	  border: 1px solid gray;
-	  border-radius: 4px;
+	  border: 1px solid black;
+	 
   }
   input,
   textarea {
 	  padding: .3em;
-	  border: 1px solid #555;
-	  border-radius: 4px;
+	  border: 1px solid black;
 	  font-family: inherit;
 	  font-size: inherit;
 	background: rgba(0,0,0,.02);
@@ -1169,21 +1174,29 @@ header{
   }
   input[type="submit"] {
 	  padding: .3em 1em;
-	  background: #555;
+	  height: 50px;
+	  width: 150px;
+	  background:#b5b1d4;
 	  border: none;
-	  color: #fff;   
-	  border-radius: 4px;
+	  color: #fff;
+	  justify-content: center;
+	  margin-left: 0;   
 	  cursor: pointer;
   }
+
+  .submitbutton{
+	  justify-content: center;
+  }
+ 
   label {
 	  width: 5em;
 	  margin-right: .5em;
 	text-align: left;
 	display: inline;
+	color: black;
+	font-family:'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
   }
-  input[type="submit"] {
-	  margin-left: auto;
-  }
+  
   div:first-child p:first-child {
 	  justify-content: flex-end;
   }
