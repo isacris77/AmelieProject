@@ -20,9 +20,9 @@
 <body>
   <header>
   
-    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="accueil" class=" navbar navbar-expand-lg navbar-light bg-light">
   
-        <a class="navbar-brand" href="#">Amélie Nadalini - Office manager</a>
+        <a class="navbar-brand" href="#accueil">Amélie Nadalini - Office manager</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,22 +32,22 @@
 
         <ul class="nav justify-content-end">
           <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines d'expertise
+           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines d'expertise
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Gestion d'entreprise</a>
-              <a class="dropdown-item" href="#">Gestion Humaine</a>
-              <a class="dropdown-item" href="#">Communication & stratégie digitale</a>
+              <a class="dropdown-item" href="#section3">Gestion d'entreprise</a>
+              <a class="dropdown-item" href="#section3">Gestion Humaine</a>
+              <a class="dropdown-item" href="#section3">Communication & stratégie digitale</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mon parcours</a>
+            <a class="nav-link" href="#experience">Mon parcours</a>
           </li> 
           <li class="nav-item">
               <a class="nav-link" href="connexion.html">Votre profil</a>
              </li>
              <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
              </li>
           </ul>
         </div>
@@ -73,21 +73,21 @@
 
                     <div class="col-md-8 ">
                       <div class="row collage2 justify-content-around">
-                        <a class="a-img-txt mbl plm ptm" href="#">
+                        <a class="a-img-txt mbl plm ptm" href="#gh">
                             <img class="a-img" src="Images/staff.png" alt="jenseign">
                             <span class="a-txt c2">Gestion humaine</span>
                         </a>
-                        <a class="a-img-txt mbl ptm" href="#">
+                        <a class="a-img-txt mbl ptm" href="#section2">
                             <img class="a-img" src="Images/tchat.png"  alt="jenseign" >
                             <span class="a-txt c1">Amélie en<br>quelques mots</span>
                         </a> 
                       </div>
                       <div class="row collage2 justify-content-around">
-                        <a class="a-img-txt plm pbm" href="#"> 
+                        <a class="a-img-txt plm pbm" href="#com"> 
                          <img class="a-img" src="Images/fb.png" alt="jenseign">
                          <span class="a-txt c1">Communication & <br>& stratégie digiale</span>
                         </a>
-                        <a class="a-img-txt pbm" href="#">
+                        <a class="a-img-txt pbm" href="#ge">
                          <img class="a-img" src="Images/dossier.png" alt="jenseign">
                          <span class="a-txt c2">Gestion d'entreprise</span>
                         </a>
@@ -150,7 +150,7 @@
                   <p>En bref, vous permettre de vous concentrer et de vous investir sereinement dans votre coeur de métier</p>
         
                 </div>
-                <button class="button button--tamaya button--border-thick" data-text="Mon parcours"><span>C'est ici <!DOCTYPE html></span></button>
+                <a href="#experience"><button class="button button--tamaya button--border-thick" data-text="Mon parcours"><span>C'est ici <!DOCTYPE html></span></button><a>
               </div> 
               
         </section>
@@ -347,7 +347,7 @@
             </div>
         </section>
 <!-- form contact -->
-        <form class="form"action="destination.php">
+        <form id="contact" class="form"action="destination.php">
             <div class="divform ptm">
                 <p class="mbs">
                  <label for="name">Votre nom</label>

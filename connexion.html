@@ -20,9 +20,9 @@
 <body>
   <header>
   
-    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="accueil"class=" navbar navbar-expand-lg navbar-light bg-light">
   
-        <a class="navbar-brand" href="index.html">Amélie Nadalini - Office manager</a>
+        <a class="navbar-brand" href="index.html#accueil">Amélie Nadalini - Office manager</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,22 +32,22 @@
 
         <ul class="nav justify-content-end">
           <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines d'expertise
+           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines d'expertise
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Gestion d'entreprise</a>
-              <a class="dropdown-item" href="#">Gestion Humaine</a>
-              <a class="dropdown-item" href="#">Communication & stratégie digitale</a>
+              <a class="dropdown-item" href="index.html#section3">Gestion d'entreprise</a>
+              <a class="dropdown-item" href="index.html#section3">Gestion Humaine</a>
+              <a class="dropdown-item" href="index.html#section3">Communication & stratégie digitale</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mon parcours</a>
+            <a class="nav-link" href="index.html#experience">Mon parcours</a>
           </li> 
           <li class="nav-item">
               <a class="nav-link" href="connexion.html">Votre profil</a>
              </li>
              <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="index.html#contact">Contact</a>
              </li>
           </ul>
         </div>
@@ -62,38 +62,38 @@
      
         
         <section class="login-section">
-            <section class="login-container">
-                <h3>Login to Your Account</h3>
-                <p class="explanatory-text">Log in to your account so you can continue building and editing your onboarding flows.</p>
+            <section class="login-container mtl">
+                <h3>Connectez-vous</h3>
+                <p class="explanatory-text"><!--trouvez une phrase d'accroche--></p>
         
                 <form id="signup" method="get">
                     <label for="login-email">Email</label>
                     <input type="email" id="login-email" size="30" placeholder="Enter your email address" required>
         
-                    <label for="login-password">Password</label>
+                    <label for="login-password">Mot de passe</label>
                     <input type="password" id="login-password" size="30" placeholder="Enter your password" required>
         
-                    <label class="checkbox"><input type="checkbox" name="save" value="" /> Remember me</label>
+                    <label class="checkbox"><input type="checkbox" name="save" value="" /> Conserver mes identifiants de connexion </label>
         
-                    <a href="/forgot-password" class="forgot-link">Forgot password</a>
+                    <a href="/forgot-password" class="forgot-link"> Vous avez oublié votre mot de passe ?</a>
         
-                    <button id="login-submit" value="" type="submit">Log in</button>
+                    <button id="login-submit" value="" type="submit">Connexion</button>
                 </form>
             </section><!--
             
-         --><section class="signup-container">
-                <h3>Sign Up for an Account</h3>
-                <p class="explanatory-text">Let's get you all set up so you can start creating your first onboarding experience.</p>
+         --><section class="signup-container mtl">
+                <h3>Je crée mon compte </h3>
+                <p class="explanatory-text">Pour suivre toutes les étapes de notre collaboration.</p>
         
                 <form method="send">
                     <div class="name-container">
                         <div>
-                            <label for="first-name">First name</label>
+                            <label for="first-name">Votre prénom</label>
                             <input type="text" id="first-name" size="30" placeholder="Your first name" required>
                         </div>
         
                         <div>
-                            <label for="last-name">Last name</label>
+                            <label for="last-name">Votre Nom</label>
                             <input type="text" id="last-name" size="30" placeholder="Your last name" required>
                         </div>
                     </div>
@@ -101,29 +101,29 @@
                     <label for="signup-email">Email</label>
                     <input type="email" id="singup-email" size="30" placeholder="Enter your email address" required>
         
-                    <label for="signup-password">Password</label>
+                    <label for="signup-password">Mot de passe</label>
                     <input type="password" id="signup-password" size="30" placeholder="Enter a strong password" required>
         
-                    <label class="checkbox"><input type="checkbox" name="accept-terms" value="" /> I accept BoardMe's <a href="/terms" target="_blank">Terms &amp; Conditions</a></label>
+                    <label class="checkbox"><input type="checkbox" name="accept-terms" value="" /> J'accepte les <a href="/terms" target="_blank">Terms &amp; Conditions</a></label>
         
-                    <button id="signup-submit" value="" type="submit">Sign up</button>
+                    <button id="signup-submit" value="" type="submit">Je m'enregistre</button>
                 </form>
             </section>
             
-            <section class="switcher-overlay" style="background: url(Images/AdobeStock_188685707.jpeg);">
+            <section class="switcher-overlay">
                 <svg viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M 0,0 L 100,0 L 80,100 L 0,100 z"></path>
                 </svg>
                 <div class="signup-text">
-                    <h3>Don't have an account yet?</h3>
-                    <p class="explanatory-text">Let's get you all set up so you can start creating your first onboarding experience.</p>
-                    <button class="switch">Sign up</button>
+                    <h3>Vous n'avez pas crée votre compte?</h3>
+                    <p class="explanatory-text"><!--trouvez une phrase d'accroche--></p>
+                    <button class="switch">Je m'enregistre</button>
                 </div>
         
                 <div class="login-text">
-                    <h3>Already signed up?</h3>
-                    <p class="explanatory-text">Log in to your account so you can continue building and editing your onboarding flows.</p>
-                    <button class="switch">Log in</button>
+                    <h3>Vous avez déjà un compte ?</h3>
+                    <p class="explanatory-text"><!--trouvez une phrase d'accroche--></p>
+                    <button class="switch">Connexion</button>
                 </div>
             </section>
         

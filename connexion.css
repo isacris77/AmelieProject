@@ -73,6 +73,9 @@ p, li {
     padding-top:15px;
 }
 
+.mtl{
+    margin-top:150px;
+}
 
 
 
@@ -125,12 +128,12 @@ h3,
     position: absolute;
     top: 0;
     left: 0;
-    padding: 7em 1em 0 2em;
+    padding: 2em 1em 0 2em;
 }
 
 .signup-container.signup-container {
     left: 50%;
-    padding: 7em 2em 0 1em;
+    padding: 2em 2em 0 1em;
 }
 
 #signup> *:not(.checkbox) {
@@ -163,7 +166,7 @@ h3,
     left: 0;
     transition: transform 0.2s;
     height: 100%;
-    width: 50%;
+    width: 49%;
     padding: 0 5em 0 1em;
     overflow: hidden;
 }
@@ -193,7 +196,7 @@ h3,
     padding: 0 1em 0 5em;
 }
 .login-open .switcher-overlay path {
-    d: path('M 0,0 L 100,0 L 100,100 L 20,100 z'); 
+    d:path('M 0,0 L 100,0 L 100,100 L 20,100 z'); 
 }
 .login-open .login-text,
 .signup-open .signup-text {
@@ -223,9 +226,7 @@ h3,
         display: none;
     }
     
-    .signup-open .home-button {
-        color: var(--primary);
-    }
+    
 }
 
 /* Little animation for the diagonal line */
