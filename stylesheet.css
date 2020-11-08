@@ -11,7 +11,6 @@ Date 	: 04/11/2020
 @font-face {font-family:"Alako";src:url("fonts/Alako/Alako.otf") format("otf"),url("fonts/Alako/Alako.woff") format("woff"),url("fonts/Alako/Alako.ttf") format("truetype"),url("fonts/Alako/Alako.svg") format("svg");font-weight:normal;font-style:normal;}
 @font-face {font-family:"Official Hollow Regular";src:url("fonts/Official_Hollow_Regular/OfficialHollow.eot") format("eot"),url("fonts/Official_Hollow_Regular/OfficialHollow.woff") format("woff"),url("fonts/Official_Hollow_Regular/OfficialHollow.ttf") format("truetype"),url("fonts/Official_Hollow_Regular/OfficialHollow.svg") format("svg");font-weight:normal;font-style:normal;}
 
-
 html {
 	box-sizing:border-box;
 	font-size: 100%;
@@ -82,18 +81,24 @@ header{
 /* nav */
 /*--------------------------*/
 
-.navbar-light .navbar-nav .nav-link {
+.nav a{
 	color:black;
 	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;  ;
 	font-size: 0.875rem;
 }
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
-	background: #a6d4d1 ;
+
+.nav-link:hover{
+
+	background: #a6d4d1;
+
 }
+
 
 .dropdown-menu{
 	background:#f2b3c6 ;
 }
+
+
 
 
 
@@ -113,7 +118,7 @@ header{
 }
 
 .banner, .banner-app{
-	background-repeat: no-repeat;
+	
 	-webkit-background-size: cover; 
 	background-size: cover;
 	background-position: 69% 50%;
@@ -338,6 +343,11 @@ header{
 
 /* ************************************************section3 *************************************************/
 
+#ge, #gh, #com{
+
+	background: #f8f9fa;
+	
+}
 
 
  /* ************************************************form ****************************************************/
