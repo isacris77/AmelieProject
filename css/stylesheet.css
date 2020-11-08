@@ -26,6 +26,7 @@ body {
 	font-weight: 400;
 	color: #000000;
 	background-color: #fff;
+
 }
 
 
@@ -81,6 +82,11 @@ header{
 /* nav */
 /*--------------------------*/
 
+.navbar{
+	width: 100%;
+position: fixed;
+z-index: 1;
+}
 .nav a{
 	color:black;
 	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;  ;
@@ -110,7 +116,7 @@ header{
 }*/
 
 .banner{
-	background-image: url('Images/AdobeStock_188685707.jpeg');
+	background-image: url('../Images/AdobeStock_188685707.jpeg');
 }
 
 .banner-app{
@@ -280,12 +286,12 @@ header{
 /* Borders */
 
 .button--border-thick {
-	border: 3px solid;
+	border: 1px solid;
 }
 
 .button--tamaya {
 	overflow: hidden;
-	color: #ff1a7f;
+	color:#7986cb;
 	min-width:150px;
 }
 
@@ -593,7 +599,7 @@ n, s, m, l = none, small, medium, large
 	margin-top: 60px!important;	
 }
 .mtxxl{
-    margin-top:150px;
+    margin-top:150px !important;
 }
 
 
@@ -654,6 +660,10 @@ n, s, m, l = none, small, medium, large
 }
 .pbl {
 	padding-bottom: 60px!important;	
+}
+
+.ptxxl{
+	padding-top: 150px !important;
 }
 
 .prs{

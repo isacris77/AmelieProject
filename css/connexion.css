@@ -1,7 +1,7 @@
 @font-face {font-family:"Alako";src:url("fonts/Alako/Alako.otf") format("otf"),url("fonts/Alako/Alako.woff") format("woff"),url("fonts/Alako/Alako.ttf") format("truetype"),url("fonts/Alako/Alako.svg") format("svg");font-weight:normal;font-style:normal;}
 @font-face {font-family:"Official Hollow Regular";src:url("fonts/Official_Hollow_Regular/OfficialHollow.eot") format("eot"),url("fonts/Official_Hollow_Regular/OfficialHollow.woff") format("woff"),url("fonts/Official_Hollow_Regular/OfficialHollow.ttf") format("truetype"),url("fonts/Official_Hollow_Regular/OfficialHollow.svg") format("svg");font-weight:normal;font-style:normal;}
 
-
+/* ********************************** ceci est dans stylesheet************ */
 body {
 	position: relative;
 	font-family: 'raleway',Georgia, 'Times New Roman', Times, serif;
@@ -31,7 +31,7 @@ body {
 
 
 
-/* ********************************** */
+
 * { box-sizing: border-box; }
 
 h1, .h1-like,
@@ -77,7 +77,12 @@ p, li {
     margin-top:150px;
 }
 
-
+.navbar{
+	width: 100%;
+position: fixed;
+z-index: 1;
+}
+/* *************************************************fin du commun avec stylesheet */
 
 
 
