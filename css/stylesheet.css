@@ -255,6 +255,11 @@ z-index: 1;
 
 
 /* Common button styles */
+
+.contactbutton{
+	display:flex;
+	justify-content: center;
+}
 .button {
 	float: left;
 	min-width: 150px;
