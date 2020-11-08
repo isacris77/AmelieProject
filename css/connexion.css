@@ -65,7 +65,7 @@ p, li {
 	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
-.ptl{
+.ptm{
   padding-top:40px;
 }
 
@@ -73,7 +73,7 @@ p, li {
     padding-top:15px;
 }
 
-.mtl{
+.mtxxl{
     margin-top:150px;
 }
 
@@ -117,7 +117,7 @@ p, li {
     padding: 0.5em;
 }
 
-h3,
+.loginh3,
 .explanatory-text {
     text-align: center;
     padding-bottom: 40px;
