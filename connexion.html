@@ -22,7 +22,7 @@
   
     <nav class=" navbar navbar-expand-lg navbar-light bg-light">
   
-        <a class="navbar-brand" href="#">Amélie Nadalini - Office manager</a>
+        <a class="navbar-brand" href="index.html">Amélie Nadalini - Office manager</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,88 +59,75 @@
     
 
     <main>
-
-        <div id="back">
-            <canvas id="canvas" class="canvas-back"></canvas>
-            <div class="backRight">    
-            </div>
-            <div class="backLeft">
-            </div>
-          </div>
-          
-          <div id="slideBox">
-            <div class="topLayer">
-              <div class="left">
-                <div class="content">
-                  <h2>Inscrivez vous</h2>
-                  <form id="form-signup" method="post" onsubmit="return false;">
-                    <div class="form-element form-stack">
-                      <label for="email" class="form-label">Email</label>
-                      <input id="email" type="email" name="email">
+     
+        
+        <section class="login-section">
+            <section class="login-container">
+                <h3>Login to Your Account</h3>
+                <p class="explanatory-text">Log in to your account so you can continue building and editing your onboarding flows.</p>
+        
+                <form id="signup" method="get">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" size="30" placeholder="Enter your email address" required>
+        
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" size="30" placeholder="Enter your password" required>
+        
+                    <label class="checkbox"><input type="checkbox" name="save" value="" /> Remember me</label>
+        
+                    <a href="/forgot-password" class="forgot-link">Forgot password</a>
+        
+                    <button id="login-submit" value="" type="submit">Log in</button>
+                </form>
+            </section><!--
+            
+         --><section class="signup-container">
+                <h3>Sign Up for an Account</h3>
+                <p class="explanatory-text">Let's get you all set up so you can start creating your first onboarding experience.</p>
+        
+                <form method="send">
+                    <div class="name-container">
+                        <div>
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" size="30" placeholder="Your first name" required>
+                        </div>
+        
+                        <div>
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" size="30" placeholder="Your last name" required>
+                        </div>
                     </div>
-                    <div class="form-element form-stack">
-                      <label for="username-signup" class="form-label">Identifiant</label>
-                      <input id="username-signup" type="text" name="username">
-                    </div>
-                    <div class="form-element form-stack">
-                      <label for="password-signup" class="form-label">Mot de passe</label>
-                      <input id="password-signup" type="password" name="password">
-                    </div>
-                    <div class="form-element form-checkbox">
-                      <input id="confirm-terms" type="checkbox" name="confirm" value="yes" class="checkbox">
-                      <label for="confirm-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
-                    </div>
-                    <div class="form-element form-submit">
-                      <button id="signUp" class="signup" type="submit" name="signup">Enregistrez</button>
-                      <button id="goLeft" class="signup off">Connectez-vous</button> 
-                    </div>
-                  </form>
+        
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="singup-email" size="30" placeholder="Enter your email address" required>
+        
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" size="30" placeholder="Enter a strong password" required>
+        
+                    <label class="checkbox"><input type="checkbox" name="accept-terms" value="" /> I accept BoardMe's <a href="/terms" target="_blank">Terms &amp; Conditions</a></label>
+        
+                    <button id="signup-submit" value="" type="submit">Sign up</button>
+                </form>
+            </section>
+            
+            <section class="switcher-overlay" style="background: url(Images/AdobeStock_188685707.jpeg);">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M 0,0 L 100,0 L 80,100 L 0,100 z"></path>
+                </svg>
+                <div class="signup-text">
+                    <h3>Don't have an account yet?</h3>
+                    <p class="explanatory-text">Let's get you all set up so you can start creating your first onboarding experience.</p>
+                    <button class="switch">Sign up</button>
                 </div>
-              </div>
-              <div class="right">
-                <div class="content">
-                  <h2>Login</h2>
-                  <form id="form-login" method="post" onsubmit="return false;">
-                    <div class="form-element form-stack">
-                      <label for="username-login" class="form-label">Identifiant</label>
-                      <input id="username-login" type="text" name="username">
-                    </div>
-                    <div class="form-element form-stack">
-                      <label for="password-login" class="form-label">Mot de passe</label>
-                      <input id="password-login" type="password" name="password">
-                    </div>
-                    <div class="form-element form-submit">
-                      <button id="logIn" class="login" type="submit" name="login">Connexion</button>
-                      <button id="goRight" class="login off" name="signup">Inscrivez vous</button>
-                    </div>
-                  </form>
+        
+                <div class="login-text">
+                    <h3>Already signed up?</h3>
+                    <p class="explanatory-text">Log in to your account so you can continue building and editing your onboarding flows.</p>
+                    <button class="switch">Log in</button>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 
-          
-          Remixed from "Sliding Login Form" Codepen by
-          C-Rodg (github.com/C-Rodg)
-          https://codepen.io/crodg/pen/yNKxej
-          
-          Remixed from "Paper.js - Animated Shapes Header" Codepen by
-          Connor Hubeny (@cooper_hu)
-          https://codepen.io/cooper_hu/pen/ybxoev
-          
-          Custom Checkbox based on the blog post by
-          Mik Ted (@inserthtml):
-          https://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
-          
-          HTML5 Form Validation based on the blog post by
-          Thoriq Firdaus (@tfirdaus):
-          https://webdesign.tutsplus.com/tutorials/
-          html5-form-validation-with-the-pattern-attribute--cms-25145
-          
-          -->
-
-
+            </section>
+        
+        </section>
 
 
 

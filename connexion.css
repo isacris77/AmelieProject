@@ -1,290 +1,239 @@
-$theme-signup: #f2b3c6;
-$theme-signup-darken: #b5b1d4;
-$theme-signup-background: #f8f9fa;
-$theme-login: #a6d4d1;
-$theme-login-darken: #512da8;
-$theme-login-background: #f9f9f9;
-$theme-dark: #212121;
-$theme-light: #e3e3e3;
-$font-default: "Roboto", sans-serif;
+@font-face {font-family:"Alako";src:url("fonts/Alako/Alako.otf") format("otf"),url("fonts/Alako/Alako.woff") format("woff"),url("fonts/Alako/Alako.ttf") format("truetype"),url("fonts/Alako/Alako.svg") format("svg");font-weight:normal;font-style:normal;}
+@font-face {font-family:"Official Hollow Regular";src:url("fonts/Official_Hollow_Regular/OfficialHollow.eot") format("eot"),url("fonts/Official_Hollow_Regular/OfficialHollow.woff") format("woff"),url("fonts/Official_Hollow_Regular/OfficialHollow.ttf") format("truetype"),url("fonts/Official_Hollow_Regular/OfficialHollow.svg") format("svg");font-weight:normal;font-style:normal;}
 
-$success: #5cb85c;
-$error: #d9534f;
 
 body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  width: 100% !important;
-  box-sizing: border-box;
-  font-family: $font-default;
+	position: relative;
+	font-family: 'raleway',Georgia, 'Times New Roman', Times, serif;
+	font-size: 1em; /* soit 16px */
+	line-height: 1.5;
+	font-weight: 400;
+	color: #000000;
+	background-color: #fff;
 }
 
-.backRight {
-  position: absolute;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background: $theme-signup;
+.nav a{
+	color:black;
+	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;  ;
+	font-size: 0.875rem;
 }
 
-.backLeft {
-  position: absolute;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: $theme-login;
+.nav-link:hover{
+
+	background: #a6d4d1;
+
 }
 
-#back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -999;
+
+.dropdown-menu{
+	background:#f2b3c6 ;
 }
 
-.canvas-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
+
+
+/* ********************************** */
+* { box-sizing: border-box; }
+
+h1, .h1-like,
+h2, .h2-like,
+h3, .h3-like,
+h4, .h4-like,
+h5, .h5-like,
+h6, .h6-like {
+	font-weight: 400;
+	color: black;
+	margin: 0 0 0.625em 0;
+	
+}
+h1, .h1-like {
+	font-size: 3em;
+	font-family: 'Official Hollow Regular', 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+}
+h2, .h2-like {
+	font-size: 2.25em;
+	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+}
+h3, .h3-like {
+	font-size: 1.50em;
+	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+  
 }
 
-#slideBox {
-  width: 50%;
-  max-height: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin-left: 50%;
-  position: absolute;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+p, li {
+	font-size: 0.875rem;
+	margin: 0 0 0.625em 0;
+	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
-.topLayer {
-  width: 200%;
-  height: 100%;
-  position: relative;
-  left: 0;
-  left: -100%;
+.ptl{
+  padding-top:40px;
 }
 
-label {
-  font-size: 0.8em;
-  text-transform: uppercase;
+.pts{
+    padding-top:15px;
 }
 
-input {
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  font-size: 1em;
-  padding: 8px 1px;
-  margin-top: 0.1em;
+
+
+
+
+
+/* Form styling */
+.login-section {
+    position: relative;
+    min-height: 100vh;
 }
 
-.left {
-  width: 50%;
-  height: 100%;
-  overflow: scroll;
-  background: $theme-signup-background;
-  left: 0;
-  position: absolute;
-  label {
-    color: $theme-light;
-  }
-  input {
-    border-bottom: 1px solid $theme-light;
-    color: $theme-light;
-    &:focus,
-    &:active {
-      border-color: $theme-signup;
-      color: $theme-signup;
-    }
-    &:-webkit-autofill {
-      -webkit-box-shadow: 0 0 0 30px $theme-signup-background inset;
-      -webkit-text-fill-color: $theme-light;
-    }
-  }
-  a {
-    color: $theme-signup;
-  }
+.login-section button {
+    width: 100%;
+    background:#b5b1d4;
+   
+    border-radius: 5px;
+    border: none;
+    padding: 1.3em 6em;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.right {
-  width: 50%;
-  height: 100%;
-  overflow: scroll;
-  background: $theme-login-background;
-  right: 0;
-  position: absolute;
-  label {
-    color: $theme-dark;
-  }
-  input {
-    border-bottom: 1px solid $theme-dark;
-    &:focus,
-    &:active {
-      border-color: $theme-login;
-    }
-    &:-webkit-autofill {
-      -webkit-box-shadow: 0 0 0 30px $theme-login-background inset;
-      -webkit-text-fill-color: $theme-dark;
-    }
-  }
+.login-section input {
+    margin-bottom: 1.5em;
+    width: 100%;
+    padding: 0.5em;
+}
+.login-section .checkbox input {
+    width: auto;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+.login-section label:not(.checkbox) {
+    font-weight: 500;
 }
 
-.content h2 {
-  font-weight: 300;
-  font-size: 2.6em;
-  margin: 0.2em 0 0.1em;
+/* Left and right section styling */
+.login-container,
+.signup-container {
+    padding: 0.5em;
 }
 
-.left .content h2 {
-  color: $theme-signup;
+h3,
+.explanatory-text {
+    text-align: center;
+    padding-bottom: 40px;
 }
 
-.right .content h2 {
-  color: $theme-login;
+.login-section > section {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7em 1em 0 2em;
 }
 
-.form-element {
-  margin: 1.6em 0;
-  &.form-submit {
-    margin: 1.6em 0 0;
-  }
+.signup-container.signup-container {
+    left: 50%;
+    padding: 7em 2em 0 1em;
 }
 
-.form-stack {
-  display: flex;
-  flex-direction: column;
+#signup> *:not(.checkbox) {
+    display: block;
 }
 
-.checkbox {
-  -webkit-appearance: none;
-  outline: none;
-  background-color: $theme-light;
-  border: 1px solid $theme-light;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 12px;
-  border-radius: 4px;
-  display: inline-block;
-  position: relative;
-}
-.checkbox:focus,
-.checkbox:checked:focus,
-.checkbox:active,
-.checkbox:checked:active {
-  border-color: $theme-signup;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+.forgot-link {
+    float: right;
 }
 
-.checkbox:checked {
-  outline: none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
-    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+.name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.name-container > div {
+    width: 49%;
+}
+.name-container input {
+    max-width: 100%;
 }
 
-.checkbox:checked:after {
-  outline: none;
-  content: "\2713";
-  color: $theme-signup;
-  font-size: 1.4em;
-  font-weight: 900;
-  position: absolute;
-  top: -4px;
-  left: 4px;
+/* Overlay styling */
+.switcher-overlay.switcher-overlay {
+  
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s;
+    height: 100%;
+    width: 50%;
+    padding: 0 5em 0 1em;
+    overflow: hidden;
 }
 
-.form-checkbox {
-  display: flex;
-  align-items: center;
-
-  label {
-    margin: 0 6px 0;
-    font-size: 0.72em;
-  }
+.switcher-overlay svg {
+    width: 100%;
+    height: 100%;
+    fill: #b5b1d4;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-button {
-  padding: 0.8em 1.2em;
-  margin: 0 10px 0 0;
-  width: auto;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1em;
-  color: #fff;
-  line-height: 1em;
-  letter-spacing: 0.6px;
-  border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
-  border: 0;
-  outline: 0;
-  transition: all 0.25s;
-  &.signup {
-    background: $theme-signup;
-  }
-  &.login {
-    background: $theme-login;
-  }
-  &.off {
-    background: none;
-    box-shadow: none;
-    margin: 0;
-
-    &.signup {
-      color: $theme-signup;
-    }
-    &.login {
-      color: $theme-login;
-    }
-  }
+.switcher-overlay > div {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
 }
 
-button:focus,
-button:active,
-button:hover {
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
-  &.signup {
-    background: $theme-signup-darken;
-  }
-  &.login {
-    background: $theme-login-darken;
-  }
-  &.off {
-    box-shadow: none;
-    &.signup {
-      color: $theme-signup;
-      background: $theme-dark;
-    }
-    &.login {
-      color: $theme-login-darken;
-      background: $theme-light;
-    }
-  }
+.switcher-overlay button {
+    width: auto;
+    background: white;
 }
 
-@media only screen and (max-width: 768px) {
-  #slideBox {
-    width: 80%;
-    margin-left: 20%;
-  }
-  .signup-info,
-  .login-info {
+.login-open .switcher-overlay  {
+    transform: translateX(100%);
+    padding: 0 1em 0 5em;
+}
+.login-open .switcher-overlay path {
+    d: path('M 0,0 L 100,0 L 100,100 L 20,100 z'); 
+}
+.login-open .login-text,
+.signup-open .signup-text {
     display: none;
-  }
+}
+
+/* Handle small screens */
+@media (max-width: 623px) {
+    .login-section.login-section > section {
+        width: 100%;
+        position: static;
+    }
+    
+    .switcher-overlay.switcher-overlay {
+        height: auto !important;
+        position: static;
+        color: black;
+        transform: none;
+        padding: 0 1em;
+    }
+    
+    .switcher-overlay > div {
+        transform: none;
+    }
+    
+    .switcher-overlay svg {
+        display: none;
+    }
+    
+    .signup-open .home-button {
+        color: var(--primary);
+    }
+}
+
+/* Little animation for the diagonal line */
+@keyframes bounceRight {
+    0%, 100% { transform: translateX(0%); }
+    30% { transform: translateX(5px); }
+}
+@keyframes bounceLeft {
+    0%, 100% { transform: translateX(0%); }
+    30% { transform: translateX(-5px); }
 }

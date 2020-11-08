@@ -396,8 +396,7 @@ header{
 	  padding: 1em;
 	  background:url('Images/AdobeStock_188685707.jpeg');
 	  color:black;
-	  font-size: 1.4em;
-	  font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+	  font-family:'raleway', Georgia, 'Times New Roman', Times, serif;
   }
 
   .form-control{
@@ -445,7 +444,7 @@ header{
 	text-align: left;
 	display: inline;
 	color: black;
-	font-family:'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+	font-family:'raleway', Georgia, 'Times New Roman', Times, serif;
   }
   
   div:first-child p:first-child {
@@ -672,16 +671,10 @@ n, s, m, l = none, small, medium, large
 }
 
 
-
-
-
-
-
-
 .overlay {
 	background-color: rgba(0,0,0,0.7);
 }
-  
- 
-  
- 
+
+
+
+/* ********************************************log in /sign in********************************** */
