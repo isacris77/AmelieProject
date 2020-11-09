@@ -8,12 +8,15 @@ Date 	: 04/11/2020
 /*-----------------------------------------------------------*/
 /* GLOBAL */
 /*-----------------------------------------------------------*/
+
+
 @font-face {font-family:"Alako";src:url("fonts/Alako/Alako.otf") format("otf"),url("fonts/Alako/Alako.woff") format("woff"),url("fonts/Alako/Alako.ttf") format("truetype"),url("fonts/Alako/Alako.svg") format("svg");font-weight:normal;font-style:normal;}
 @font-face {font-family:"Official Hollow Regular";src:url("fonts/Official_Hollow_Regular/OfficialHollow.eot") format("eot"),url("fonts/Official_Hollow_Regular/OfficialHollow.woff") format("woff"),url("fonts/Official_Hollow_Regular/OfficialHollow.ttf") format("truetype"),url("fonts/Official_Hollow_Regular/OfficialHollow.svg") format("svg");font-weight:normal;font-style:normal;}
 
 html {
 	box-sizing:border-box;
 	font-size: 100%;
+
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -28,6 +31,7 @@ body {
 	background-color: #fff;
 
 }
+
 
 
 
@@ -53,6 +57,7 @@ h2, .h2-like {
 	font-size: 2.25em;
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
+
 h3, .h3-like {
 	font-size: 1.50em;
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
@@ -224,10 +229,7 @@ z-index: 1;
 	width: 150px;
 }
 
-.box{
-	flex-direction: column;
-	align-items: center;
-}
+
 
 /* button mon parcours */
 /*--------------------------*/
@@ -246,11 +248,13 @@ z-index: 1;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	flex-direction: column;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	-webkit-justify-content: center;
 	justify-content: center;
+	align-items: center;
 }
 
 
@@ -352,6 +356,8 @@ z-index: 1;
 	transform: scale3d(1, 1, 1);
 }
 
+
+
 /* ************************************************section3 *************************************************/
 
 #ge, #gh, #com{
@@ -359,6 +365,57 @@ z-index: 1;
 	background: #f8f9fa;
 	
 }
+
+.h2-mission{
+	font-weight: 800;
+	align-self: center;
+	text-align: center ;
+}
+
+.p-mission{
+	align-self: center;
+}
+.boxreussir{
+	height: 200px;
+	background-color: white;
+	position: relative;
+	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
+	border: 3px solid #f2b3c6;
+	
+}
+.boxreussir:after, .boxreussir:before{
+	
+	filter:none;
+	z-index: -1;
+	content:'';
+	width:calc(65% + (50px * 2));
+	height:calc(100% + (50px * 2));
+	position: absolute;
+	display: block;
+	animation: border 10s ease-in-out infinite;
+	transform:translateX(368px) translateY(-50px);
+}
+@keyframes border {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+            clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+  }
+  50% {
+    -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+            clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+  }
+}
+
+.boxreussir:after{
+	animation-delay: -5s;
+	background-color: #b5b1d4;
+	clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+}
+.boxreussir:before {
+	background-color: #f2b3c6;
+	  clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+}
+
 
 
  /* ************************************************form ****************************************************/
@@ -602,6 +659,10 @@ n, s, m, l = none, small, medium, large
 }
 .mtl {
 	margin-top: 60px!important;	
+}
+
+.mtxl{
+	margin-top: 100px;;
 }
 .mtxxl{
     margin-top:150px !important;
