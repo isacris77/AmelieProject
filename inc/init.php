@@ -1,9 +1,7 @@
 <?php
 
 //connexion Ã  la base de donnÃ©es
-$pdo = new pdo (
-
-    'mysql :host=localhost;dbname=AmelieNadalini',
+$pdo = new pdo ('mysql :host=localhost;dbname=AmelieNadalini',
     'root',
     '',
         

@@ -8,39 +8,96 @@ if (!empty($_POST)) {
 
   //validation du formulaire:
 
+//nom
   if(!isset($_POST['nom']) || strlen($_POST['nom']) < 4 || strlen($_POST['nom']) >20) {
           $contenu = '<div class ="alert alert-danger">Le nom doit contenir entre 1 et 20 caractères. </div>';
        }
-  
-  
+//prenom
        if (!isset($_POST['prenom']) || strlen($_POST['prenom']) < 1 || strlen($_POST['prenom'])  > 20) { 
         $contenu.= '<div class="alert alert-danger">Le prénom doit contenir entre 1 et 20 caractères.</div>';
        }
-
+//societe
        if (!isset($_POST['societe']) || strlen($_POST['societe']) < 1 || strlen($_POST['societe'])  > 50) { 
         $contenu.= '<div class="alert alert-danger">La société doit contenir entre 1 et 20 caractères.</div>';
         }
-
-      if (!isset($_POST['telephone'])   || !preg_match('#^[0-9]{10}$#', $_POST['telephone'])) {
+//telephone
+      if (!isset($_POST['telephone']) || !preg_match('#^[0-9]{10}$#', $_POST['telephone'])) {
         $contenu .= '<div class="alert alert-danger">Le telephone n\'est pas valide.</div>';
         }
 
+//email
         if(!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL ) || strlen($_POST['email']) > 50 ){ // 
           $contenu.= '<div class="alert alert-danger">L\'email n\'est pas valide</div>';
 
-    }
+         }
+//adresse
+         if (!isset($_POST['adresse']) || strlen($_POST['adresse']) < 4 || strlen($_POST['adresse'])  > 50) { 
+          $contenu.= '<div class="alert alert-danger">L\'adresse doit contenir entre 4 et 50 caractères.</div>';
+        }
+//ville
+        if (!isset($_POST['ville']) || strlen($_POST['ville']) < 1 || strlen($_POST['ville'])  > 20) { 
+          $contenu.= '<div class="alert alert-danger">La ville doit contenir entre 1 et 20 caractères.</div>';
+        }
+//CP 
+        if (!isset($_POST['cp']) || !preg_match('#^[0-9]{5}$#', $_POST['cp'])) {
+          $contenu.= '<div class="alert alert-danger">Le code postal n\'est pas valide.</div>';
+        }
+//demande
+        if(!isset($_POST['demande']) || ($_POST['demande'] != 'ge' &&  $_POST['demande'] != 'gh' && $_POST['demande'] != 'com' && $_POST['demande'] != 'autre')){
+          $contenu.= '<div class="alert alert-danger">Votre demande n\'est pas valide.</div>';
+
+        }
+//message
+        
+        if (!isset($_POST['message']) || strlen($_POST['description']) < 6 || strlen($_POST['description'])  > 255) { 
+          $contenu.= '<div class="alert alert-danger">Votre message doit comprendre entre 6 et 255 caractères.</div>';
+          } 
+       
+          
+
+      
+
+          // si aucun message d'erreur on valide et envoyez le formulaire en BDD
+
+          if (empty($contenu)) {
+ // echappement des données du formulaire
+
+            $_POST['nom'] = htmlspecialchars(['nom'], ENT_QUOTES);
+            $_POST['prenom'] = htmlspecialchars(['prenom'], ENT_QUOTES);
+            $_POST['societe'] = htmlspecialchars(['societe'], ENT_QUOTES);
+            $_POST['telephone'] = htmlspecialchars(['telephone'], ENT_QUOTES);
+            $_POST['email'] = htmlspecialchars(['email'], ENT_QUOTES);
+            $_POST['adresse'] = htmlspecialchars(['adresse'], ENT_QUOTES);
+            $_POST['ville'] = htmlspecialchars(['ville'], ENT_QUOTES);
+            $_POST['cp'] = htmlspecialchars(['cp'], ENT_QUOTES);
+            $_POST['demande'] = htmlspecialchars(['demande'], ENT_QUOTES);
+            $_POST['message'] = htmlspecialchars(['message'], ENT_QUOTES);
     
+ 
+ // on prépare la reqûete.
 
+            $resultat = $pdo->prepare("REPLACE INTO contact (nom, prenom, societe, telephone, email, adresse, ville, cp, demande, message) VALUES(:nom, :prenom, :societe, :telephone, :email, :adresse, :ville, :cp, :demande, :message)");
 
+            $succes = $resultat ->execute(array(
+              ':nom' => $_POST['nom'],
+              ':prenom' => $_POST['prenom'],
+              ':societe' => $_POST['societe'],
+              ':telephone' => $_POST['telephone'],
+              ':email' => $_POST['email'],
+              ':adresse' => $_POST['adresse'],
+              ':ville' => $_POST['ville'],
+              ':cp' => $_POST['cp'],
+              ':demande' => $_POST['demande'],
+              ':message' => $_POST['message']
+            ));
 
-
-
-
-
-
-
-
-}// fin du if(!empty($_POST))
+            if ($succes){
+              $contenu = '<div class="alert alert-success">Votre demande de contact a bien été enregistré</div>';
+                }else {
+                  $contenu = '<div class="alert alert-danger">Erreur lors de l\'envoi de votre message. Veuillez essayer à nouveau</div>';
+                }
+          } // fin du if(empty($contenu))
+} // fin du if(!empty($_POST))
 
 
 
@@ -101,10 +158,10 @@ require_once 'inc/header.php';
                 <div  class="mbm">
                     <label for="demande">Votre demande concerne:</label>
                     <select id="demande" class="form-control">
-                        <option selected value="choix1">Gestion d'entreprise</option>
-                        <option value="choix2">Gestion Humaine</option>
-                        <option value="choix3">Communication et stratégie digitale</option>
-                        <option value="choix4">Autre demande</option>
+                        <option selected value="ge">Gestion d'entreprise</option>
+                        <option value="gh">Gestion Humaine</option>
+                        <option value="com">Communication et stratégie digitale</option>
+                        <option value="autre">Autre demande</option>
                     </select>
                 </div>
                 <p>Votre Message</p>
