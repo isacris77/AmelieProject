@@ -4,6 +4,7 @@ require_once 'inc/init.php';
 
 //---------------------------------TRAITEMENT PHP-------------------
 
+debug ($_POST);
 if (!empty($_POST)) {
 
   //validation du formulaire:
@@ -179,6 +180,7 @@ require_once 'inc/header.php';
            
         </form>
 </div>
+
 
 <?php
 require_once 'inc/footer.php';

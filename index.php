@@ -1,5 +1,10 @@
-<!-- ********************affichage********************* -->
 <?php
+require_once 'inc/init.php';
+
+
+
+//<!-- ********************affichage********************* -->
+
 require_once 'inc/header.php';
 ?>
 

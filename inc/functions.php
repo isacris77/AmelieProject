@@ -14,17 +14,7 @@ function debug($var){
 // fonction qui indique que l'internaute est connectÃ©
 /// A ETUDIER
 
-function estConnecte(){
-    if (isset($_SESSION['membre'])){ // si membre existe dans la session c'est que l'internaute est passé par la page de connexion avec les bons pseudos et mdp
 
-
-        return true; // il est connecté
-
-    }   else{
-            return false; // il n'est pas connecté
-    }
-
-}
 
 
 

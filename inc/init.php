@@ -1,10 +1,9 @@
 <?php
 
 //connexion Ã  la base de donnÃ©es
-$pdo = new pdo ('mysql :host=localhost;dbname=AmelieNadalini',
+$pdo = new pdo ('mysql :host=localhost;dbname=amelie_nadalini',
     'root',
     '',
-        
     array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
         PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8' 
