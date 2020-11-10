@@ -22,7 +22,8 @@
   
     <nav id="accueil" class=" navbar navbar-expand-lg navbar-light bg-light">
   
-        <a class="navbar-brand" href="index.html">Amélie Nadalini - Office manager</a>
+        <a class="navbar-brand" href="index.php">Amélie Nadalini - Office manager</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,23 +32,29 @@
        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
 
         <ul class="nav justify-content-end">
+
+        
+
+
           <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines d'expertise
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.html#section3">Gestion d'entreprise</a>
-              <a class="dropdown-item" href="index.html#section3">Gestion Humaine</a>
-              <a class="dropdown-item" href="index.html#section3">Communication & stratégie digitale</a>
+              <a class="dropdown-item" href="index.php#section3">Gestion d'entreprise</a>
+              <a class="dropdown-item" href="index.php#section3">Gestion Humaine</a>
+              <a class="dropdown-item" href="index.php#section3">Communication & stratégie digitale</a>
             </div>
           </li>
+
+
           <li class="nav-item">
-            <a class="nav-link" href="index.html#experience">Mon parcours</a>
+            <a class="nav-link" href="#experience">Mon parcours</a>
           </li> 
           <li class="nav-item">
-              <a class="nav-link" href="connexion.html">Me connecter</a>
+              <a class="nav-link" href="connexion.php">Me connecter</a>
              </li>
              <li class="nav-item">
-              <a class="nav-link" href="mecontacter.html">Contact</a>
+              <a class="nav-link" href="mecontacter.php">Contact</a>
              </li>
           </ul>
         </div>
@@ -60,30 +67,6 @@
 
     <main>
 
-
-
-
-
-   
-
-
-    </main>
-		
-	
-    
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
-    <script src="style.js"></script>
-
-</body>
-</html>     
+                 
+<!-- ********************************************************************************************* -->                    
+                    <!-- ICI le contenu spécifique à la page -->
