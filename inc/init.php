@@ -1,7 +1,5 @@
-<?php
-
-//connexion Ã  la base de donnÃ©es
-$pdo = new pdo ('mysql :host=localhost;dbname=amelie_nadalini',
+<?
+$pdo = new PDO ('mysql:host=localhost;dbname=amelie_nadalini',
     'root',
     '',
     array(
@@ -11,13 +9,11 @@ $pdo = new pdo ('mysql :host=localhost;dbname=amelie_nadalini',
 
     session_start();
 
-    //chemin du site 
+
     define('RACINE_SITE', '/amelieProject/');
 
-    //variables d'affichage
+   
     $contenu ='';
-
-
-    //inclusions des fonctions
+ 
     require_once 'functions.php';
 

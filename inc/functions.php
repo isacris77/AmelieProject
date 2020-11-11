@@ -1,24 +1,10 @@
-<?php
-
-//fonction du site
-
+<?
 function debug($var){
     echo '<pre>';
         print-r($var);
     echo '</pre>';    
 }
 
-
-
-//---------------
-// fonction qui indique que l'internaute est connectÃ©
-/// A ETUDIER
-
-
-
-
-
-// fonction qui exÃ©cute les requetes
 function executeRequete($requete, $param = array()){
 
 

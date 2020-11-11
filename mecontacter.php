@@ -1,10 +1,10 @@
 <?php
 require_once 'inc/init.php';
-
+var_dump ($_GET);
 
 //---------------------------------TRAITEMENT PHP-------------------
 
-debug ($_POST);
+
 if (!empty($_POST)) {
 
   //validation du formulaire:
@@ -19,39 +19,39 @@ if (!empty($_POST)) {
        }
 //societe
        if (!isset($_POST['societe']) || strlen($_POST['societe']) < 1 || strlen($_POST['societe'])  > 50) { 
-        $contenu.= '<div class="alert alert-danger">La société doit contenir entre 1 et 20 caractères.</div>';
+        $contenu = '<div class="alert alert-danger">La société doit contenir entre 1 et 20 caractères.</div>';
         }
 //telephone
       if (!isset($_POST['telephone']) || !preg_match('#^[0-9]{10}$#', $_POST['telephone'])) {
-        $contenu .= '<div class="alert alert-danger">Le telephone n\'est pas valide.</div>';
+        $contenu  = '<div class="alert alert-danger">Le telephone n\'est pas valide.</div>';
         }
 
 //email
         if(!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL ) || strlen($_POST['email']) > 50 ){ // 
-          $contenu.= '<div class="alert alert-danger">L\'email n\'est pas valide</div>';
+          $contenu = '<div class="alert alert-danger">L\'email n\'est pas valide</div>';
 
          }
 //adresse
          if (!isset($_POST['adresse']) || strlen($_POST['adresse']) < 4 || strlen($_POST['adresse'])  > 50) { 
-          $contenu.= '<div class="alert alert-danger">L\'adresse doit contenir entre 4 et 50 caractères.</div>';
+          $contenu = '<div class="alert alert-danger">L\'adresse doit contenir entre 4 et 50 caractères.</div>';
         }
 //ville
         if (!isset($_POST['ville']) || strlen($_POST['ville']) < 1 || strlen($_POST['ville'])  > 20) { 
-          $contenu.= '<div class="alert alert-danger">La ville doit contenir entre 1 et 20 caractères.</div>';
+          $contenu = '<div class="alert alert-danger">La ville doit contenir entre 1 et 20 caractères.</div>';
         }
 //CP 
         if (!isset($_POST['cp']) || !preg_match('#^[0-9]{5}$#', $_POST['cp'])) {
-          $contenu.= '<div class="alert alert-danger">Le code postal n\'est pas valide.</div>';
+          $contenu = '<div class="alert alert-danger">Le code postal n\'est pas valide.</div>';
         }
 //demande
         if(!isset($_POST['demande']) || ($_POST['demande'] != 'ge' &&  $_POST['demande'] != 'gh' && $_POST['demande'] != 'com' && $_POST['demande'] != 'autre')){
-          $contenu.= '<div class="alert alert-danger">Votre demande n\'est pas valide.</div>';
+          $contenu = '<div class="alert alert-danger">Votre demande n\'est pas valide.</div>';
 
         }
 //message
         
         if (!isset($_POST['message']) || strlen($_POST['description']) < 6 || strlen($_POST['description'])  > 255) { 
-          $contenu.= '<div class="alert alert-danger">Votre message doit comprendre entre 6 et 255 caractères.</div>';
+          $contenu = '<div class="alert alert-danger">Votre message doit comprendre entre 6 et 255 caractères.</div>';
           } 
        
           
@@ -98,7 +98,7 @@ if (!empty($_POST)) {
                   $contenu = '<div class="alert alert-danger">Erreur lors de l\'envoi de votre message. Veuillez essayer à nouveau</div>';
                 }
           } // fin du if(empty($contenu))
-} // fin du if(!empty($_POST))
+}; // fin du if(!empty($_POST))
 
 
 
@@ -111,7 +111,7 @@ require_once 'inc/header.php';
 
 
       <div class="ptxxl pbl banner">
-        <form id="contact" class="form "action="destination.php">
+        <form id="contact" class="form">
             <div class="divform ptm">
                 <p class="mbs">
                  <label for="nom">Votre nom</label>
@@ -166,7 +166,7 @@ require_once 'inc/header.php';
                     </select>
                 </div>
                 <p>Votre Message</p>
-                <textarea name="message" id="message" cols="10" rows="5">Je suis un textarea dont la hauteur se calcule par rapport au bloc de contenu à ma gauche.</textarea>
+                <textarea name="message" id="message" cols="10" rows="5"></textarea>
                <div class="contactbutton">
                  <button class="button button--tamaya button--border-thick" data-text="Confirmer"><span>Valider<!DOCTYPE html></span></button>
                 </div>
