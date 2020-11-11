@@ -1,10 +1,5 @@
 <?php
 
-function debug($var){
-    echo '<pre>';
-        print-r($var);
-    echo '</pre>';    
-}
 
 function executeRequete($requete, $param = array()){
 
@@ -13,10 +8,10 @@ function executeRequete($requete, $param = array()){
        $param[$indice] = htmlspecialchars($valeur);
     }
 
-    global $pdo;
+    global $bdd;
 
 
-    $resultat = $pdo->prepare($requete);
+    $resultat = $bdd->prepare($requete);
 
     $succes = $resultat->execute($param);
 

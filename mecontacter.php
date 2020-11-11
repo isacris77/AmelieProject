@@ -1,4 +1,5 @@
 <?php
+require_once 'inc/init.php';
 
 
 
@@ -15,7 +16,7 @@ if (!empty($_POST)) {
        }
 //prenom
        if (!isset($_POST['prenom']) || strlen($_POST['prenom']) < 1 || strlen($_POST['prenom'])  > 20) { 
-        $contenu.= '<div class="alert alert-danger">Le prénom doit contenir entre 1 et 20 caractères.</div>';
+        $contenu = '<div class="alert alert-danger">Le prénom doit contenir entre 1 et 20 caractères.</div>';
        }
 //societe
        if (!isset($_POST['societe']) || strlen($_POST['societe']) < 1 || strlen($_POST['societe'])  > 50) { 
@@ -44,7 +45,7 @@ if (!empty($_POST)) {
           $contenu = '<div class="alert alert-danger">Le code postal n\'est pas valide.</div>';
         }
 //demande
-        if(!isset($_POST['demande']) || ($_POST['demande'] != 'ge' &&  $_POST['demande'] != 'gh' && $_POST['demande'] != 'com' && $_POST['demande'] != 'autre')){
+        if(!isset($_POST['demande']) || ($_POST['demande'] != 'Gestion d\'entreprise' &&  $_POST['demande'] != 'Gestion Humaine' && $_POST['demande'] != 'Communication et strategie digitale' && $_POST['demande'] != 'Autre demande')){
           $contenu = '<div class="alert alert-danger">Votre demande n\'est pas valide.</div>';
 
         }
@@ -61,23 +62,11 @@ if (!empty($_POST)) {
           // si aucun message d'erreur on valide et envoyez le formulaire en BDD
 
           if (empty($contenu)) {
- // echappement des données du formulaire
 
-            $_POST['nom'] = htmlspecialchars(['nom'], ENT_QUOTES);
-            $_POST['prenom'] = htmlspecialchars(['prenom'], ENT_QUOTES);
-            $_POST['societe'] = htmlspecialchars(['societe'], ENT_QUOTES);
-            $_POST['telephone'] = htmlspecialchars(['telephone'], ENT_QUOTES);
-            $_POST['email'] = htmlspecialchars(['email'], ENT_QUOTES);
-            $_POST['adresse'] = htmlspecialchars(['adresse'], ENT_QUOTES);
-            $_POST['ville'] = htmlspecialchars(['ville'], ENT_QUOTES);
-            $_POST['cp'] = htmlspecialchars(['cp'], ENT_QUOTES);
-            $_POST['demande'] = htmlspecialchars(['demande'], ENT_QUOTES);
-            $_POST['message'] = htmlspecialchars(['message'], ENT_QUOTES);
-    
  
  // on prépare la reqûete.
 
-            $resultat = $pdo->prepare('INSERT INTO contact (nom, prenom, societe, telephone, email, adresse, ville, cp, demande, message) VALUES(:nom, :prenom, :societe, :telephone, :email, :adresse, :ville, :cp, :demande, :message)');
+            $resultat = $bdd->prepare('INSERT INTO contact (nom, prenom, societe, telephone, email, adresse, ville, cp, demande, message) VALUES(:nom, :prenom, :societe, :telephone, :email, :adresse, :ville, :cp, :demande, :message)');
 
             $succes = $resultat ->execute(array(
               ':nom' => $_POST['nom'],
@@ -98,7 +87,7 @@ if (!empty($_POST)) {
                   $contenu = '<div class="alert alert-danger">Erreur lors de l\'envoi de votre message. Veuillez essayer à nouveau</div>';
                 }
           } // fin du if(empty($contenu))
-}; // fin du if(!empty($_POST))
+} // fin du if(!empty($_POST))
 
 
 
@@ -107,81 +96,75 @@ if (!empty($_POST)) {
 
 //---------------------------------AFFICHAGE-------------------
 require_once 'inc/header.php';
-?>
-
+      ?>
+   
 
       <div class="ptxxl pbl banner">
+        <?php
+         echo $contenu;
+        ?>
     
-        <form id="contact" class="form" method="POST" action="mecontacter.php">  <?
-      echo $contenu;
-   
-      ?>
+        <form id="contact" class="form" method="post" action="" >  
             <div class="divform ptm">
-                <p class="mbs">
+                <div class="mbs">
                  <label for="nom">Votre nom</label>
-                 <input type="text" class="form-control" id="nom" autofocus value="<?php echo $_POST['nom'] ?? ''; ?>">
-                </p>
-                <p class="mbs">
+                 <input type="text" class="form-control" id="nom" name="nom" autofocus>
+                </div>
+                <div class="mbs">
                   <label for="prenom">Votre prénom </label>
-                  <input type="text" class="form-control" id="prenom" value="<?php echo $_POST['prenom'] ?? ''; ?>">
-                </p>
-                <p class="mbs">
+                  <input type="text" class="form-control" id="prenom" name="prenom" >
+                </div>
+                <div class="mbs">
                  <label for="societe">Nom de votre société</label>
-                 <input type="text" class="form-control" id="societe" value="<?php echo $_POST['societe'] ?? ''; ?>" >
-                </p>
+                 <input type="text" class="form-control" id="societe" name="societe" >
+                </div>
               
-                <p class="mbs">
+                <div class="mbs">
                  <label for="telephone">Téléphone</label>
-                 <input type="text" class="form-control" id="telephone" value="<?php echo $_POST['telephone'] ?? ''; ?>" >
-                </p>
+                 <input type="text" class="form-control" id="telephone" name="telephone">
+                </div>
               
-                <p class="mbs">
+                <div class="mbs">
                  <label for="email">E-mail : </label>
-                 <input type="email" class="form-control" id="email" value="<?php echo $_POST['email'] ?? ''; ?>">
-                </p>
+                 <input type="email" class="form-control" id="email" name="email"  >
+                </div>
               
-                <p class="mbs">
+                <div class="mbs">
                   <label for="adresse">Adresse</label>
-                  <input type="text" class="form-control" id="adresse" value="<?php echo $_POST['adresse'] ?? ''; ?>">
-                </p>
-              <p class="mbs">
+                  <input type="text" class="form-control" id="adresse" name="adresse">
+                </div>
+              <div class="mbs">
                  <label for="ville">Ville</label>
-                 <input type="text" class="form-control" id="ville" value="<?php echo $_POST['ville'] ?? ''; ?>">
-              <p>
+                 <input type="text" class="form-control" id="ville" name="ville">
+              <div>
                 
-              <p class="mbs">
+              <div class="mbs">
                  <label for="cp">Code postal</label>
-                <input type="text" class="form-control" id="cp" value="<?php echo $_POST['cp'] ?? ''; ?>">
+                <input type="text" class="form-control" id="cp" name="cp">
         
-              </p>
-                
-                         
-              <p><small>(ceci est un texte bidon de remplissage, juste pour étirer la hauteur de ce bloc de contenu) On aurait dit que j'ai lu toutes les conditions et les trucs écrits en tout petit dans les CGU et je n'ai même pas peur de cliquer sur le bouton "envoyer".</small></p>
-            
-            </div>
-            <div class="divform ptm">
-                <div  class="mbm">
-                    <label for="demande">Votre demande concerne:</label>
-                    <select id="demande" class="form-control" value="<?php echo $_POST['demande'] ?? ''; ?>">
-                        <option selected value="ge">Gestion d'entreprise</option>
-                        <option value="gh">Gestion Humaine</option>
-                        <option value="com">Communication et stratégie digitale</option>
-                        <option value="autre">Autre demande</option>
-                    </select>
-                </div>
-                <p>Votre Message</p>
-                <textarea name="message" id="message" cols="10" rows="5" value="<?php echo $_POST['message'] ?? ''; ?>"></textarea>
-               <div class="contactbutton">
-                 <button class="button button--tamaya button--border-thick" data-text="Confirmer"><span>Valider</span></button>
-                </div>
-              
-            </div>
               </div>
+                
+                <div  class="mbs">
+                    <label for="demande">Votre demande concerne:</label>
+                    <select id="demande" class="form-control" name="demande">
+                        <option selected value="Gestion d\'entreprise">Gestion d'entreprise</option>
+                        <option value="Gestion humaine">Gestion Humaine</option>
+                        <option value="Communication et strategie digitale">Communication et stratégie digitale</option>
+                        <option value="Autre demande">Autre demande</option>
+                    </select>
+                </div> 
+                <div class="mbs">
+                 <p>Votre Message</p>
+                <textarea class="col" name="message" id="message"  rows="5"></textarea>
+                </div>
+               
+               <div class="contactbutton">
+                 <input type="submit" ></input>
+                </div> 
               
-
-
-        
-           
+              
+            </div>
+                      
         </form>
 </div>
 

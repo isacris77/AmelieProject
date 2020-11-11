@@ -48,7 +48,7 @@
 
 
           <li class="nav-item">
-            <a class="nav-link" href="#experience">Mon parcours</a>
+            <a class="nav-link" href="index.php#experience">Mon parcours</a>
           </li> 
           <li class="nav-item">
               <a class="nav-link" href="connexion.php">Me connecter</a>
