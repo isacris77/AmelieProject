@@ -1,4 +1,5 @@
-<?
+<?php
+
 function debug($var){
     echo '<pre>';
         print-r($var);
@@ -15,12 +16,12 @@ function executeRequete($requete, $param = array()){
     global $pdo;
 
 
-    $resulat = $pdo->prepare($requete);
+    $resultat = $pdo->prepare($requete);
 
-    $succes = $resulat->execute($param);
+    $succes = $resultat->execute($param);
 
     if ($succes) {
-       return $resulat;
+       return $resultat;
     } else {
         return false;
     }

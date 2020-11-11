@@ -1,6 +1,6 @@
 <?php
-require_once 'inc/init.php';
-var_dump ($_GET);
+
+
 
 //---------------------------------TRAITEMENT PHP-------------------
 
@@ -50,7 +50,7 @@ if (!empty($_POST)) {
         }
 //message
         
-        if (!isset($_POST['message']) || strlen($_POST['description']) < 6 || strlen($_POST['description'])  > 255) { 
+        if (!isset($_POST['message']) || strlen($_POST['message']) < 6 || strlen($_POST['message'])  > 255) { 
           $contenu = '<div class="alert alert-danger">Votre message doit comprendre entre 6 et 255 caractères.</div>';
           } 
        
@@ -77,7 +77,7 @@ if (!empty($_POST)) {
  
  // on prépare la reqûete.
 
-            $resultat = $pdo->prepare("REPLACE INTO contact (nom, prenom, societe, telephone, email, adresse, ville, cp, demande, message) VALUES(:nom, :prenom, :societe, :telephone, :email, :adresse, :ville, :cp, :demande, :message)");
+            $resultat = $pdo->prepare('INSERT INTO contact (nom, prenom, societe, telephone, email, adresse, ville, cp, demande, message) VALUES(:nom, :prenom, :societe, :telephone, :email, :adresse, :ville, :cp, :demande, :message)');
 
             $succes = $resultat ->execute(array(
               ':nom' => $_POST['nom'],
@@ -111,43 +111,47 @@ require_once 'inc/header.php';
 
 
       <div class="ptxxl pbl banner">
-        <form id="contact" class="form">
+    
+        <form id="contact" class="form" method="POST" action="mecontacter.php">  <?
+      echo $contenu;
+   
+      ?>
             <div class="divform ptm">
                 <p class="mbs">
                  <label for="nom">Votre nom</label>
-                 <input type="text" class="form-control" id="nom" autofocus>
+                 <input type="text" class="form-control" id="nom" autofocus value="<?php echo $_POST['nom'] ?? ''; ?>">
                 </p>
                 <p class="mbs">
                   <label for="prenom">Votre prénom </label>
-                  <input type="prenom" class="form-control"  id="prenom">
+                  <input type="text" class="form-control" id="prenom" value="<?php echo $_POST['prenom'] ?? ''; ?>">
                 </p>
                 <p class="mbs">
                  <label for="societe">Nom de votre société</label>
-                 <input type="text" class="form-control" id="societe" >
+                 <input type="text" class="form-control" id="societe" value="<?php echo $_POST['societe'] ?? ''; ?>" >
                 </p>
               
                 <p class="mbs">
                  <label for="telephone">Téléphone</label>
-                 <input type="text" class="form-control" id="telephone" >
+                 <input type="text" class="form-control" id="telephone" value="<?php echo $_POST['telephone'] ?? ''; ?>" >
                 </p>
               
                 <p class="mbs">
                  <label for="email">E-mail : </label>
-                 <input type="email" class="form-control" id="email">
+                 <input type="email" class="form-control" id="email" value="<?php echo $_POST['email'] ?? ''; ?>">
                 </p>
               
                 <p class="mbs">
                   <label for="adresse">Adresse</label>
-                  <input type="text" class="form-control" id="adresse">
+                  <input type="text" class="form-control" id="adresse" value="<?php echo $_POST['adresse'] ?? ''; ?>">
                 </p>
               <p class="mbs">
                  <label for="ville">Ville</label>
-                 <input type="text" class="form-control" id="ville">
+                 <input type="text" class="form-control" id="ville" value="<?php echo $_POST['ville'] ?? ''; ?>">
               <p>
                 
               <p class="mbs">
                  <label for="cp">Code postal</label>
-                <input type="text" class="form-control" id="cp">
+                <input type="text" class="form-control" id="cp" value="<?php echo $_POST['cp'] ?? ''; ?>">
         
               </p>
                 
@@ -158,7 +162,7 @@ require_once 'inc/header.php';
             <div class="divform ptm">
                 <div  class="mbm">
                     <label for="demande">Votre demande concerne:</label>
-                    <select id="demande" class="form-control">
+                    <select id="demande" class="form-control" value="<?php echo $_POST['demande'] ?? ''; ?>">
                         <option selected value="ge">Gestion d'entreprise</option>
                         <option value="gh">Gestion Humaine</option>
                         <option value="com">Communication et stratégie digitale</option>
@@ -166,9 +170,9 @@ require_once 'inc/header.php';
                     </select>
                 </div>
                 <p>Votre Message</p>
-                <textarea name="message" id="message" cols="10" rows="5"></textarea>
+                <textarea name="message" id="message" cols="10" rows="5" value="<?php echo $_POST['message'] ?? ''; ?>"></textarea>
                <div class="contactbutton">
-                 <button class="button button--tamaya button--border-thick" data-text="Confirmer"><span>Valider<!DOCTYPE html></span></button>
+                 <button class="button button--tamaya button--border-thick" data-text="Confirmer"><span>Valider</span></button>
                 </div>
               
             </div>
