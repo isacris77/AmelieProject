@@ -51,7 +51,7 @@
             <a class="nav-link" href="index.php#experience">Mon parcours</a>
           </li> 
           <li class="nav-item">
-              <a class="nav-link" href="connexion.php">Me connecter</a>
+              <a class="nav-link" href="inscription.php">Me connecter</a>
              </li>
              <li class="nav-item">
               <a class="nav-link" href="mecontacter.php">Contact</a>

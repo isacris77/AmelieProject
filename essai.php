@@ -138,7 +138,7 @@ if(!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL
           $mdp = password_hash($_POST['password'], PASSWORD_DEFAULT);
           
 
-          $succes=executeRequete("INSERT INTO membre (prenom, nom, email, password) VALUES (:prenom, :nom, :email, :password)",
+          $succes=executeRequete("INSERT INTO membre (pseudo, email, email, password) VALUES (:prenom, :nom, :email, :password)",
           array(
               ':prenom' => $_POST['prenom'],
               ':nom' => $_POST['nom'],
@@ -147,7 +147,7 @@ if(!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL
 
           ));
 
-          $contenu .= '<div class="alert alert-success">Votre inscription est confirmée. Veuillez-vous connecter </div>';
+          $erre .= '<div class="alert alert-success">Votre inscription est confirmée. Veuillez-vous connecter </div>';
 
       }
     
