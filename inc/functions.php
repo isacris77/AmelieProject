@@ -1,5 +1,12 @@
 <?php
 
+function debug($var){
+    echo '<pre>';
+        print_r($var);
+    echo '</pre>';    
+}
+
+
 
 function executeRequete($requete, $param = array()){
 

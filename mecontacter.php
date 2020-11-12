@@ -103,7 +103,7 @@ require_once 'inc/header.php';
         <?php
          echo $contenu;
         ?>
-    
+      <div class="container">
         <form id="contact" class="form" method="post" action="" >  
             <div class="divform ptm">
                 <div class="mbs">
@@ -166,6 +166,7 @@ require_once 'inc/header.php';
             </div>
                       
         </form>
+        </div>
 </div>
 
 

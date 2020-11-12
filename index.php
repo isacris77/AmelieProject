@@ -65,6 +65,7 @@ require_once 'inc/header.php';
                            
                         </div>
 
+
                         <div class="col-md-3 prs">
                             <h3>Mes valeurs</h3>
                             <ul>
@@ -104,6 +105,9 @@ require_once 'inc/header.php';
 
 
 <!-- section3  -->
+
+
+
 <section id="section3" class="ptl pbl">
   <h1 class="mbs txt-center h2-like ">Mes domaines d'expertise</h1>
   <p class="h3-like txt-center mbm">Je vous accompagne et vous conseille</p>

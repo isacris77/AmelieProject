@@ -40,9 +40,9 @@
            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines d'expertise
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.php#section3">Gestion d'entreprise</a>
-              <a class="dropdown-item" href="index.php#section3">Gestion Humaine</a>
-              <a class="dropdown-item" href="index.php#section3">Communication & stratégie digitale</a>
+              <a class="dropdown-item" href="index.php#ge">Gestion d'entreprise</a>
+              <a class="dropdown-item" href="index.php#gh">Gestion Humaine</a>
+              <a class="dropdown-item" href="index.php#com">Communication & stratégie digitale</a>
             </div>
           </li>
 
