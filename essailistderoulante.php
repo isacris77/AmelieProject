@@ -1,12 +1,9 @@
 <style>
 .cadre{
   position:absolute;
-
-
   width:600px;
   height:400px;
-
-   border-radius:2px;
+  border-radius:2px;
   overflow:hidden;
   background:red;
   color:white;
@@ -35,7 +32,7 @@
 .carousel .preTxt{ 
   position:absolute;
   top:0;
-  right:47%;
+  right:45%;
   height:45px;
   text-shadow:2px 2px 2px pink;
   }

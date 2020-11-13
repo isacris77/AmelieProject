@@ -7,34 +7,34 @@ require_once 'inc/init.php';
  
 if(isset($_POST['forminscription'])) {
    $pseudo = htmlspecialchars($_POST['pseudo']);
-   $mail = htmlspecialchars($_POST['mail']);
-   $mail2 = htmlspecialchars($_POST['mail2']);
+   $email = htmlspecialchars($_POST['email']);
+   $email2 = htmlspecialchars($_POST['email2']);
    $mdp = sha1($_POST['mdp']);
    $mdp2 = sha1($_POST['mdp2']);
-   if(!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {
+   if(!empty($_POST['pseudo']) AND !empty($_POST['email']) AND !empty($_POST['email2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {
       $pseudolength = strlen($pseudo);
       if($pseudolength <= 255) {
-         if($mail == $mail2) {
-            if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-               $reqmail = $bdd->prepare("SELECT * FROM espace_membre WHERE mail = ?");
-               $reqmail->execute(array($mail));
-               $mailexist = $reqmail->rowCount();
-               if($mailexist == 0) {
+         if($email == $email2) {
+            if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+               $reqemail = $bdd->prepare("SELECT * FROM espace_membre WHERE email = ?");
+               $reqemail->execute(array($email));
+               $emailexist = $reqemail->rowCount();
+               if($emailexist == 0) {
                   if($mdp == $mdp2) {
-                     $insertmbr = $bdd->prepare("INSERT INTO espace_membre(pseudo, mail, motdepasse) VALUES(?, ?, ?)");
-                     $insertmbr->execute(array($pseudo, $mail, $mdp));
+                     $insertmbr = $bdd->prepare("INSERT INTO espace_membre(pseudo, email, mdp) VALUES(?, ?, ?)");
+                     $insertmbr->execute(array($pseudo, $email, $mdp));
                      $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
                   } else {
                      $erreur = "Vos mots de passes ne correspondent pas !";
                   }
                } else {
-                  $erreur = "Adresse mail déjà utilisée !";
+                  $erreur = "Adresse email déjà utilisée !";
                }
             } else {
-               $erreur = "Votre adresse mail n'est pas valide !";
+               $erreur = "Votre adresse email n'est pas valide !";
             }
          } else {
-            $erreur = "Vos adresses mail ne correspondent pas !";
+            $erreur = "Vos adresses email ne correspondent pas !";
          }
       } else {
          $erreur = "Votre pseudo ne doit pas dépasser 255 caractères !";
@@ -51,9 +51,9 @@ echo $contenu;
 ?>
 
 <!-- essai -->
-<div style="align-center">
-         <h2>Inscription</h2>
-         <br /><br />
+<div style="align-center" >
+         <h2 class="ptxxxl mbl">Inscription</h2>
+         
          <form method="POST" action="">
             <table>
                <tr>
@@ -66,18 +66,18 @@ echo $contenu;
                </tr>
                <tr>
                   <td style="align-right">
-                     <label for="mail">Mail :</label>
+                     <label for="email">email :</label>
                   </td>
                   <td>
-                     <input type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" />
+                     <input type="email" placeholder="Votre email" id="email" name="email" value="<?php if(isset($email)) { echo $email; } ?>" />
                   </td>
                </tr>
                <tr>
                   <td style="align-right">
-                     <label for="mail2">Confirmation du mail :</label>
+                     <label for="email2">Confirmation du email :</label>
                   </td>
                   <td>
-                     <input type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2" value="<?php if(isset($mail2)) { echo $mail2; } ?>" />
+                     <input type="email" placeholder="Confirmez votre email" id="email2" name="email2" value="<?php if(isset($email2)) { echo $email2; } ?>" />
                   </td>
                </tr>
                <tr>
@@ -111,76 +111,8 @@ echo $contenu;
          }
          ?>
       </div>
-
-
-
-<!-- fin essai  -->
-        <!-- <section class="login-section">
-            <section class="login-container mtxxl">
-                <h3 class="loginh3">Connectez-vous</h3>
-                <p class="explanatory-text"><!--trouvez une phrase d'accroche--></p>
-<!--         
-                <form id="signup" method="get">
-                    <label for="login-email">Email</label>
-                    <input type="email" id="login-email" size="30" name="loginemail" required>
         
-                    <label for="login-password">Mot de passe</label>
-                    <input type="password" id="login-password" size="30" name="loginpassword" required>
-        
-                    <label class="checkbox"><input type="checkbox" name="save" value="" /> Conserver mes identifiants de connexion </label>
-        
-                    <a href="/forgot-password" class="forgot-link"> Vous avez oublié votre mot de passe ?</a>
-        
-                    <button id="login-submit" value="" type="submit">Connexion</button>
-                </form>
-            </section> -->
-     <!-- <section class="signup-container mtxxl">
-                <h3 class="loginh3">Je crée mon compte </h3>
-                <p class="explanatory-text">Pour suivre toutes les étapes de notre collaboration.</p>
-        
-                <form id="log-in"method="send">
-                    <div class="name-container">
-                        <div>
-                            <label for="prenom">Votre prénom</label>
-                            <input type="text" id="first-name"  name="prenom" required>
-                        </div>
-        
-                        <div>
-                            <label for="nom">Votre Nom</label>
-                            <input type="text" id="last-name"  name="nom" required>
-                        </div>
-                    </div>
-        
-                    <label for="signup-email">Email</label>
-                    <input type="email" id="singup-email"  name="email"required>
-        
-                    <label for="signup-password">Mot de passe</label>
-                    <input type="password" id="signup-password"  name="password" required>
-        
-                    <label class="checkbox"><input type="checkbox" name="accept-terms" value="" /> J'accepte les <a href="/terms" target="_blank">Terms &amp; Conditions</a></label>
-        
-                    <button id="signup-submit" value="" type="submit">Je m'enregistre</button>
-                </form>
-            </section>
-            
-            <section class="switcher-overlay">
-                <svg    viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path  d="M 0,0 L 100,0 L 80,100 L 0,100 z"></path>
-                </svg>
-                <div class="signup-text">
-                    <h3 class="loginh3">Vous n'avez pas crée votre compte?</h3>
-                    <p class="explanatory-text"><!--trouvez une phrase d'accroche--></p>
-                    <!-- <button class="switch">Je m'enregistre</button>
-                </div>
-        
-                <div class="login-text">
-                    <h3 class="loginh3">Vous avez déjà un compte ?</h3>
-                    <p class="explanatory-text"><!--trouvez une phrase d'accroche--></p>
-                    <!-- <button class="switch">Connexion</button>
-                </div>
-            </section>
-        
-        </section>  -->
+        </section>  
 
  
 
