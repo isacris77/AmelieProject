@@ -13,9 +13,17 @@ require_once 'inc/header.php';
                      <div class=" collage1  col-md-4 ptl pbl">
                           <h1>AMELIE NADALINI</h1>
                           <h2>Votre office manager virtuel</h2>
-                         <p><img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-quote-left-25.png" alt="guillemet de citation"> Je sais à quel point les démarches à entreprendre dans les domaines administratif, financier,   commercial sont chronophages et surtout mises de coté quand on est à son compte.</p>
-  
-                         <p>J'ai rapidement compris qu'il faut être accompagné pour s'en sortir <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-get-quote-25.png" alt="guillemet de citation"></p>
+
+                          <p>Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</p>
+                           
+                            <ul>
+                              <li>Le manque de temps</li>
+                              <li>Le manque d'envie</li>
+                              <li>Le manque de moyen</li>
+                              <li>L'absence de soutien</li>
+                            </ul>
+
+                      
                     </div>
 
                     <div class="col-md-8 ">
@@ -53,15 +61,9 @@ require_once 'inc/header.php';
                       <div class="row presentation mbm justify-content-between">
                         <div class="col-md-4 prs">
 
-                            <h3>Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</h3>
-                           
-                            <ul>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/alarm-clock.png" alt="Image de réveil / alarme"> Le manque de temps</li>
-                              <li> <img src="Images/Icon httpsicons8.comiconsetbusinessios/sad.png" alt="visage triste"> Le manque d'envie</li>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/no-cash.png" alt="symbole euros"> Le manque de moyen</li>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/removeuser.png" alt=""> L'absence de soutien</li>
-                            </ul>
-             
+                            <p><img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-quote-left-25.png" alt="guillemet de citation"> Je sais à quel point les démarches à entreprendre dans les domaines administratif, financier,   commercial sont chronophages et surtout mises de coté quand on est à son compte.</p>
+  
+                            <p>J'ai rapidement compris qu'il faut être accompagné pour s'en sortir. <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-get-quote-25.png" alt="guillemet de citation"></p>
                            
                         </div>
 
