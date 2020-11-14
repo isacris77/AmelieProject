@@ -24,7 +24,7 @@ html {
 body {
 	position: relative;
 	font-family: 'raleway',Georgia, 'Times New Roman', Times, serif;
-	font-size: 1em; /* soit 16px */
+	font-size: 0.875rem; /* soit 16px */
 	line-height: 1.5;
 	font-weight: 400;
 	color: #000000;
@@ -46,7 +46,7 @@ h5, .h5-like,
 h6, .h6-like {
 	font-weight: 400;
 	color: black;
-	margin: 0 0 0.625em 0;
+	line-height: 1.2;
 	
 }
 h1, .h1-like {
@@ -54,26 +54,27 @@ h1, .h1-like {
 	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 h2, .h2-like {
-	font-size: 2.25em;
+	font-size: 3em;
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+
 }
 
 h3, .h3-like {
-	font-size: 1.50em;
+	font-size: 1.75em;
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
-p, li {
-	font-size: 0.875rem;
-	margin: 0 0 0.625em 0;
-	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
-}
+
 
 
 
 /*-----------------------------------------------------------*/
 /* CONTENT */ /* Code desktop */
 /*-----------------------------------------------------------*/
+.btn{
+	height: 50px;
+	width: 150px;
+}
 
 
 /* header */
@@ -126,7 +127,7 @@ ul{
 }*/
 
 .banner{
-	background-image: url('Images\AdobeStock_188685707.jpeg');
+	background-image: url('Images/bg.jpeg');
 }
 
 .banner-app{
@@ -142,23 +143,24 @@ ul{
 }
 
 
-/* ************************************************section1 *************************************************/
+/* ************************************************introduction *************************************************/
+/* intro1 */
+
 .intro1 {
 
 	flex-direction: column;
 	align-self: center;
 	text-align: center;
 	background:white;
-	border: 5px solid white;
+	
 }
-.intro1 li{
-	text-align: left;
-}
-.intro1 p{
-	padding: 0px 0px 0px 40px;
+
+.intro1 ul{
+	padding: 20px 0px 0px 0px;
 }
 
 
+/* intro2 */
 .a-img-txt{
 	display:grid; 
   }
@@ -179,6 +181,8 @@ ul{
 	opacity:0;
 	filter:invert(0); /* antibug si effet sur a-img */
 	transition:opacity .8s;
+	text-decoration: underline;
+	text-decoration-color:black;
   }
   
   /* les couleurs c1 et c2 */
@@ -193,6 +197,7 @@ ul{
   /* le survol */
   .a-txt:hover{
 	opacity:1;
+	
   }
   .a-img-txt:hover .a-img{
 	filter:invert(0);
@@ -211,60 +216,53 @@ ul{
 	text-decoration:none;
   }
 
-/* ************************************************section2 *************************************************/
+/* ************************************************presentation *************************************************/
 
-
-
-/* .presentation div{
-	background:#f8f9fa;
-} */
-.bouton{
-	text-align: center;
-	
-}
-
-.btn{
-	height: 50px;
-	width: 150px;
-}
-
-
-
-/* button mon parcours */
-/*--------------------------*/
-.content {
-	padding: 2em 1em 5em;
-	z-index: 1;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-.content h2 {
-	margin: 0 0 2em;
-}
-
-.box {
-	
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	flex-direction: column;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	justify-content: center;
+.contenupres{
+	justify-content: space-evenly;
 	align-items: center;
+}
+
+.quotepres{
+	font-size: 2em;
+	font-style:italic;
+
+}
+
+
+.persovaleurs{
+	justify-content: space-evenly;
+	
+}
+
+.persovaleurs li{
+	line-height: 1.5;
+}
+
+
+
+
+/* section mon parcours */
+/*--------------------------*/
+.parcours{
+	justify-content: space-evenly;
+	background-color: white;
+}
+
+
+.un{
+	text-align: center;
 }
 
 
 /* Common button styles */
 
-.contactbutton{
+.parcoursbutton{
 	display:flex;
 	justify-content: center;
+	align-items: center;
 }
 .button {
-	float: left;
 	min-width: 150px;
 	max-width: 250px;
 	display: block;
@@ -273,7 +271,6 @@ ul{
 	border: none;
 	background: none;
 	color: inherit;
-
 	position: relative;
 	z-index: 1;
 
@@ -286,7 +283,7 @@ ul{
 	vertical-align: middle;
 }
 
-.bg-1 .button {
+ .button {
 	color: black;
 	border-color: #b5b1d4 ;
 }
@@ -301,6 +298,8 @@ ul{
 	overflow: hidden;
 	color:#7986cb;
 	min-width:150px;
+	
+	
 }
 
 .button--tamaya::before,
@@ -358,6 +357,11 @@ ul{
 
 
 /* ************************************************section3 *************************************************/
+
+.competencescontenu{
+justify-content: space-evenly;
+align-items: center;	
+}
 
 #ge, #gh, #com{
 
@@ -487,7 +491,7 @@ ul{
 
 	/* buttons */
 	/*--------------------------*/
-
+	
 	/* nav */
 	/*--------------------------*/
 
@@ -655,6 +659,15 @@ n, s, m, l = none, small, medium, large
 
 .overlay {
 	background-color: rgba(204, 61, 61, 0.7);
+}
+
+.bordertop{
+	border-top: 1px solid black;
+}
+
+.borderbottom{
+	border-bottom: 1px solid black;
+
 }
 
 

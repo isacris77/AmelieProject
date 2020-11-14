@@ -7,121 +7,136 @@ require_once 'inc/header.php';
 ?>
 
 <!-- section1 -->
-        <section id="introduction" class="ptl banner">
-            <div class="container" >
-                <div class="row  ptl">
-                     <div class=" intro1 col-md-6 ptl pbl">
-                     
-                          <h1>AMELIE NADALINI</h1>
-                          <h2>Votre office manager virtuel</h2>
+<section id="introduction" class="ptl banner">
+  <div class="container" >
+    <div class="row ptl pbl">
+
+      <div class="intro1 col-md-6 pts pbl">
+        <h1>AMELIE NADALINI</h1>
+        <h2 class="bordertop borderbottom pas mbl">Votre office manager virtuel</h2>
                       
-                     
-                        
-                          <p >Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</p>
+        <p>Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</p>
                           
-                            <ul >
-                              <li>Le manque de temps</li>
-                              <li>Le manque d'envie</li>
-                              <li>Le manque de moyen</li>
-                              <li>L'absence de soutien</li>
-                            </ul>
+        <ul >
+          <li>Le manque de temps</li>
+          <li>Le manque d'envie</li>
+          <li>Le manque de moyen</li>
+          <li>L'absence de soutien</li>
+        </ul>
+      </div>
 
-                           
-                    </div>
+      <div class="col-md-6 ">
+        <div class="row intro2 justify-content-around">
+          <a class="a-img-txt mbl plm ptm" href="#gh">
+              <img class="a-img" src="Images/staff1.png" alt="icon de groupe de personne">
+              <span class="a-txt c2">Gestion humaine</span>
+          </a>
+          <a class="a-img-txt mbl ptm " href="#section2" >
+              <img class="a-img" src="Images/tchat1.png"2alt="icone de tchat" >
+              <span class="a-txt c1" >Amélie en<br>quelques mots</span>
+         </a> 
+        </div>
+        <div class="row intro2 justify-content-around">
+          <a class="a-img-txt plm pbm" href="#com"> 
+           <img class="a-img" src="Images/fb1.png" alt="icon pouce facebook">
+           <span class="a-txt c1">Communication & <br>& stratégie digiale</span>
+          </a>
+          <a class="a-img-txt pbm" href="#ge">
+           <img class="a-img" src="Images/dossier1.png" alt="icone de dossier">
+           <span class="a-txt c2">Gestion d'entreprise</span>
+          </a>
+        </div>
 
-                    <div class="col-md-6 ">
-                      <div class="row collage2 justify-content-around">
-                        <a class="a-img-txt mbl plm ptm" href="#gh">
-                            <img class="a-img" src="Images/staff1.png" alt="jenseign">
-                            <span class="a-txt c2">Gestion humaine</span>
-                        </a>
-                        <a class="a-img-txt mbl ptm " href="#section2" >
-                            <img class="a-img" src="Images/tchat1.png"2alt="jenseign" >
-                            <span class="a-txt c1" >Amélie en<br>quelques mots</span>
-                        </a> 
-                      </div>
-                      <div class="row collage2 justify-content-around">
-                        <a class="a-img-txt plm pbm" href="#com"> 
-                         <img class="a-img" src="Images/fb1.png" alt="jenseign">
-                         <span class="a-txt c1">Communication & <br>& stratégie digiale</span>
-                        </a>
-                        <a class="a-img-txt pbm" href="#ge">
-                         <img class="a-img" src="Images/dossier1.png" alt="jenseign">
-                         <span class="a-txt c2">Gestion d'entreprise</span>
-                        </a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </div>
+  </div>
+</section>
 
 
 <!-- section2 -->
-        <section id="section2" class="ptl pbl">
-            <h2 class="mbm txt-center">Amelie en quelques mots :</h2>
-            <div class="container">
-                
-                      <div class="row presentation mbm justify-content-between">
-                        <div class="col-md-4 prs">
+<section id="presentation" class="ptl pbl">
+  <div class="contenupres row"  >
 
-                            <p> <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-quote-left-25.png" alt="guillemet de citation">Je sais à quel point les démarches à entreprendre dans les domaines administratif, financier,   commercial sont chronophages et surtout mises de coté quand on est à son compte.</p>
-  
-                            <p>J'ai rapidement compris qu'il faut être accompagné pour s'en sortir. <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-get-quote-25.png" alt="guillemet de citation"></p>
-                           
-                        </div>
+    <div class="quotepres col-md-4 pas " >
+      <p><img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-quote-left-25.png" alt="guillemet de citation">...Je sais à quel point les démarches à entreprendre dans les domaines administratif, financier,   commercial sont chronophages et surtout mises de coté quand on est à son compte.</p>
+      <p>J'ai rapidement compris qu'il faut être accompagné pour s'en sortir... <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-get-quote-25.png" alt="guillemet de citation"></p>
+    </div>
 
+    <div class="persopres col-md-6">
 
-                        <div class="col-md-3 prs">
-                            <h3>Mes valeurs</h3>
-                            <ul>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/family.png" alt="icon de famille"> Famille / Amitié -> Je tire mes forces de ces valeurs.</li>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/justice.png" alt="icon de la justice"> Justice</li>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/helping-hand-25.png" alt="">   Honnêteté</li>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/handshake.png" alt="icon poignée de main"> Respect</li>
-                              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/don de soi.png" alt="Image d'un coeur sur la main"> Don de soi</li>
-                            </ul>
-                        </div>
+        <h2 class="mbl pas txt-center"><span class="bordertop borderbottom " >Amelie en quelques mots :</span></h2>
 
-                        <div class="col-md-3">
-                            <h3>Hobbies</h3>
-                            <ul>
-                               <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/bike.png" alt="icon VTT"> VTT</li>
-                               <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/mountain.png" alt="icon de montagne pour randonnées">  Randonnées</li>
-                               <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/travauxmanuel.png" alt="icon de travaux manuels">  Travaux manuels</li>
-                               <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/jardinage.png" alt="icon de jardinage">  Jardinage</li>
-                             </ul>
-                        </div>
-                      </div>
-                    
-                   </div>
-         
-           
-              <div class="box bg-1">
-                <div class="box">
-                  <p>Ce que je peux vous proposer:</p>
-                  
-                  <p>En bref, vous permettre de vous concentrer et de vous investir sereinement dans votre coeur de métier</p>
-        
-                </div>
-                <a href="#experience"><button class="button button--tamaya button--border-thick" data-text="Mon parcours"><span>C'est ici <!DOCTYPE html></span></button><a>
-              </div> 
-              
-        </section>
+        <div class="persovaleurs row ">
+
+          <div class="valeurs col-md-4  " >
+            <h3 class="pbm txt-center">Mes valeurs</h3>
+            <ul>
+              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/family.png" alt="icon de famille"> Famille / Amitié : Je tire mes forces de ces valeurs.</li>
+             
+              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/justice.png" alt="icon de la justice"> Justice</li>
+              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/helping-hand-25.png" alt="">   Honnêteté</li>
+              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/handshake.png" alt="icon poignée de main"> Respect</li>
+              <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/don de soi.png" alt="Image d'un coeur sur la main"> Don de soi</li>
+            </ul>
+         </div> <!-- fin valeurs-->
+
+         <div class="hobbies col-md-4  " >
+            <h3 class="pbm txt-center">Hobbies</h3>
+           <ul>
+             <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/bike.png" alt="icon VTT"> VTT</li>
+             <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/mountain.png" alt="icon de montagne pour randonnées">  Randonnées</li>
+             <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/travauxmanuel.png" alt="icon de travaux manuels">  Travaux manuels</li>
+             <li><img src="Images/Icon httpsicons8.comiconsetbusinessios/jardinage.png" alt="icon de jardinage">  Jardinage</li>
+           </ul>
+         </div><!-- fin hobbies-->
+
+        </div> <!-- fin persovaleurs-->
+    </div> <!--persopres-->
+
+  </div> <!--fin contenupres-->
+</section> <!--fin section id="presentation"-->
+
+<div id="proposition"  class="ptl pbm banner" >
+   <div class="container">
+     <div class="parcours row ptm ">
+        <div class="parcourscontent col-md-5">
+           <p class="h3-like un">Ce que je peux vous proposer :</p>
+           <p>En bref, vous permettre de vous concentrer et de vous investir sereinement dans votre coeur de métier</p>
+       </div>
+
+        <div class="parcoursbutton col-md-3">
+          <div ><a href="#experience"><button class=" button button--tamaya button--border-thick" data-text="Mon parcours"><span>C'est ici</span></button><a></div> 
+        </div>
+      </div>
+   </div> 
+</div>   
+   
+ 
 
 
 <!-- section3  -->
 
 
 
-<section id="section3" class="ptl pbl">
-  <h1 class="mbs txt-center h2-like ">Mes domaines d'expertise</h1>
-  <p class="h3-like txt-center mbm">Je vous accompagne et vous conseille</p>
-  <div class="container-fluid">
-    <div class="row contour justify-content-around pbm">
-      <div id="ge" class="card col-md-3">
+<section id="competences" class="ptl pbl">
+  <div class="row competencescontenu pas">
+    <div class="comptencesintro col-md-4 pas " >
+      <h2 class="mbl"><span class="bordertop borderbottom " >Mes domaines de compétences</span></h2>
+      <p>Je vous accompagne et vous conseille dans plusieurs domaines</p>
+     </div>
+
+    <div class="competencesdomaine col-md-6" style="background:blue;" >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate quo, incidunt, obcaecati error, aut sit accusantium beatae nesciunt repellendus deserunt harum cum cumque voluptate dolores ea vero ut tempora?</p>
+
+    </div>   
+
+  </div>
+</section>  
+
+
+      <div  class="card col-md-3">
         
-          <div class="card-body">
-            <h2 class="card-title h3-like">Gestion d'entreprise</h2>
+          <div  class="card-body">
+            <h2  class="card-title h3-like">Gestion d'entreprise</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
               
@@ -135,7 +150,7 @@ require_once 'inc/header.php';
                     </ul> 
         </div>
     
-        <div id="gh" class="card col-md-3">
+        <div class="card col-md-3">
          
           <div class="card-body">
           <h2 class="card-title h3-like">Gestion Humaine</h2>
@@ -149,7 +164,7 @@ require_once 'inc/header.php';
         </div>
 
         
-    <div id="com" class="card col-md-3">
+    <div class="card col-md-3">
       
       <div class="card-body">
       <h2  class="card-title h3-like">Communication & Stratégie commerciale</h2>
