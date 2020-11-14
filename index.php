@@ -9,13 +9,15 @@ require_once 'inc/header.php';
 <!-- section1 -->
         <section id="section1" class="ptl banner">
             <div class="container" >
-                <div class="row ">
-                     <div class=" collage1  col-md-4 ptl pbl">
+                <div class="row  ptl">
+                     <div class=" collage1  col-md-6 ptl pbl">
+                     
                           <h1>AMELIE NADALINI</h1>
                           <h2>Votre office manager virtuel</h2>
-
+                      
+                        <div class="row">
                           <p>Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</p>
-                           
+                          
                             <ul>
                               <li>Le manque de temps</li>
                               <li>Le manque d'envie</li>
@@ -23,27 +25,27 @@ require_once 'inc/header.php';
                               <li>L'absence de soutien</li>
                             </ul>
 
-                      
+                            </div>
                     </div>
 
-                    <div class="col-md-8 ">
+                    <div class="col-md-6 ">
                       <div class="row collage2 justify-content-around">
                         <a class="a-img-txt mbl plm ptm" href="#gh">
-                            <img class="a-img" src="Images/staff.png" alt="jenseign">
+                            <img class="a-img" src="Images/staff1.png" alt="jenseign">
                             <span class="a-txt c2">Gestion humaine</span>
                         </a>
                         <a class="a-img-txt mbl ptm " href="#section2" >
-                            <img class="a-img" src="Images/tchat.png"  alt="jenseign" >
-                            <span class="a-txt c1">Amélie en<br>quelques mots</span>
+                            <img class="a-img" src="Images/tchat1.png"2alt="jenseign" >
+                            <span class="a-txt c1" >Amélie en<br>quelques mots</span>
                         </a> 
                       </div>
                       <div class="row collage2 justify-content-around">
                         <a class="a-img-txt plm pbm" href="#com"> 
-                         <img class="a-img" src="Images/fb.png" alt="jenseign">
+                         <img class="a-img" src="Images/fb1.png" alt="jenseign">
                          <span class="a-txt c1">Communication & <br>& stratégie digiale</span>
                         </a>
                         <a class="a-img-txt pbm" href="#ge">
-                         <img class="a-img" src="Images/dossier.png" alt="jenseign">
+                         <img class="a-img" src="Images/dossier1.png" alt="jenseign">
                          <span class="a-txt c2">Gestion d'entreprise</span>
                         </a>
                       </div>

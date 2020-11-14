@@ -51,7 +51,7 @@ h6, .h6-like {
 }
 h1, .h1-like {
 	font-size: 3em;
-	font-family: 'Official Hollow Regular', 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
+	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 h2, .h2-like {
 	font-size: 2.25em;
@@ -109,13 +109,18 @@ z-index: 1;
 	background:#f2b3c6 ;
 }
 
+/* *****ul***** */
 
-
+ul{
+	list-style-type: none;
+}
 
 
 
 /* main */
 /*--------------------------*/
+
+
 /*.banner-box {
 	background-color: rgba(0, 0, 0, 0.8);
 }*/
@@ -138,24 +143,23 @@ z-index: 1;
 
 
 /* ************************************************section1 *************************************************/
-
-
-.collage1{
-	flex-direction: column;
-	align-self: center;
-	background: white;
+.collage1 {
 
 	
+	
+	flex-direction: column;
+	align-self: center;
+	text-align: center;
+	background:white;
+	border: 5px solid white;
 }
-
-.collage2 h2{
-	font-size: 1.25em;
-	font-family: 'Alako','raleway' Georgia, 'Times New Roman', Times, serif;
+.collage1 li{
+	text-align: left;
 }
-
 .collage1 p{
-	font-style: italic;
+	padding: 0px 0px 0px 40px;
 }
+
 
 .a-img-txt{
 	display:grid; 
