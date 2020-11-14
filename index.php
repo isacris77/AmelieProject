@@ -7,25 +7,26 @@ require_once 'inc/header.php';
 ?>
 
 <!-- section1 -->
-        <section id="section1" class="ptl banner">
+        <section id="introduction" class="ptl banner">
             <div class="container" >
                 <div class="row  ptl">
-                     <div class=" collage1  col-md-6 ptl pbl">
+                     <div class=" intro1 col-md-6 ptl pbl">
                      
                           <h1>AMELIE NADALINI</h1>
                           <h2>Votre office manager virtuel</h2>
                       
-                        <div class="row">
-                          <p>Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</p>
+                     
+                        
+                          <p >Serial-entrepreneuse depuis maintenant 7 ans, je comprends:</p>
                           
-                            <ul>
+                            <ul >
                               <li>Le manque de temps</li>
                               <li>Le manque d'envie</li>
                               <li>Le manque de moyen</li>
                               <li>L'absence de soutien</li>
                             </ul>
 
-                            </div>
+                           
                     </div>
 
                     <div class="col-md-6 ">
@@ -63,7 +64,7 @@ require_once 'inc/header.php';
                       <div class="row presentation mbm justify-content-between">
                         <div class="col-md-4 prs">
 
-                            <p><img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-quote-left-25.png" alt="guillemet de citation"> Je sais à quel point les démarches à entreprendre dans les domaines administratif, financier,   commercial sont chronophages et surtout mises de coté quand on est à son compte.</p>
+                            <p> <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-quote-left-25.png" alt="guillemet de citation">Je sais à quel point les démarches à entreprendre dans les domaines administratif, financier,   commercial sont chronophages et surtout mises de coté quand on est à son compte.</p>
   
                             <p>J'ai rapidement compris qu'il faut être accompagné pour s'en sortir. <img src="Images/Icon httpsicons8.comiconsetbusinessios/icons8-get-quote-25.png" alt="guillemet de citation"></p>
                            

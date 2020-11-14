@@ -143,20 +143,18 @@ ul{
 
 
 /* ************************************************section1 *************************************************/
-.collage1 {
+.intro1 {
 
-	
-	
 	flex-direction: column;
 	align-self: center;
 	text-align: center;
 	background:white;
 	border: 5px solid white;
 }
-.collage1 li{
+.intro1 li{
 	text-align: left;
 }
-.collage1 p{
+.intro1 p{
 	padding: 0px 0px 0px 40px;
 }
 
