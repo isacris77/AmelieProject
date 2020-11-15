@@ -90,25 +90,17 @@ require_once 'inc/header.php';
          </div><!-- fin hobbies-->
 
         </div> <!-- fin persovaleurs-->
+       
+        <div class="parcoursbutton">
+          <div ><a href="#experience"><button class=" button button--tamaya button--border-thick" data-text="Mon CV"><span>C'est ici</span></button><a></div> 
+       
+        </div>
     </div> <!--persopres-->
 
   </div> <!--fin contenupres-->
 </section> <!--fin section id="presentation"-->
 
-<div id="proposition"  class="ptl pbm banner" >
-   <div class="container">
-     <div class="parcours row ptm ">
-        <div class="parcourscontent col-md-5">
-           <p class="h3-like un">Ce que je peux vous proposer :</p>
-           <p>En bref, vous permettre de vous concentrer et de vous investir sereinement dans votre coeur de métier</p>
-       </div>
-
-        <div class="parcoursbutton col-md-3">
-          <div ><a href="#experience"><button class=" button button--tamaya button--border-thick" data-text="Mon parcours"><span>C'est ici</span></button><a></div> 
-        </div>
-      </div>
-   </div> 
-</div>   
+ 
    
  
 
@@ -117,85 +109,83 @@ require_once 'inc/header.php';
 
 
 
-<section id="competences" class="ptl pbl">
-  <div class="row competencescontenu pas">
-    <div class="comptencesintro col-md-4 pas " >
+<section id="mission" class=" mtxl pbl">
+  <div class="container ">
+    <div class="row boxreussir">
+       <h2 class="h3-like col-md-4 h2-mission">Comment réussir la mission ?</h2>
+       <div class="col-md-8 p-mission">
+         <p>Je suis une collaboratrice fiable, enthousiaste et à l'écoute.</p>
+         <p>J'ai une grande capacité d'adaptation à tout type de projet.</p>
+         <p>J'effectue un feedback permanent et journalier avec un décompte des heures  travaillées.</p>    
+         <p>Je pratique le télétravail depuis de nombreuses années car il me permet d'être efficace et d'avoir un bon équilibre vie pro/vie  perso.</p>  
+       </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="competences" class="mtxl ptm pbl">
+  <div class=" row competencescontenu  ">
+    <div class="competencesintro col-md-4 pas" style="background:green
+    ;"  >
+
       <h2 class="mbl"><span class="bordertop borderbottom " >Mes domaines de compétences</span></h2>
       <p>Je vous accompagne et vous conseille dans plusieurs domaines</p>
-     </div>
+      
+     
+          <p class=" h3-like un">Ce que je peux vous proposer :</p>
+         <p>En bref, vous permettre de vous concentrer et de vous investir sereinement dans votre coeur de métier</p>
+      
+    
+    </div>
+      
+    <div class="col-md-6 ptl pbl" style="background:purple;" >
+      <div class="row competencesdomaine">
 
-    <div class="competencesdomaine col-md-6" style="background:blue;" >
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate quo, incidunt, obcaecati error, aut sit accusantium beatae nesciunt repellendus deserunt harum cum cumque voluptate dolores ea vero ut tempora?</p>
-
-    </div>   
-
-  </div>
-</section>  
-
-
-      <div  class="card col-md-3">
-        
+        <div  class="card col-md-4 boxshadow">
           <div  class="card-body">
             <h2  class="card-title h3-like">Gestion d'entreprise</h2>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-              
-                    <ul class="list-group list-group-flush ">
-                      <li class="list-group-item">Gérer votre administratif professionnel et personnel</li>
-                      <li class="list-group-item">Courriers, emails & appels</li>
-                      <li class="list-group-item">Devis, facturations, suivis & relance</li>
-                      <li class="list-group-item">Relai de votre comptabilité et suivi de trésorerie</li>
-                      <li class="list-group-item">Déplacements (transports, locations, hôtels)</li>
-                      <li class="list-group-item">Propositions commerciales, contrats, cahier des charges</li>
-                    </ul> 
+             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           </div>
+            
+            <ul class="list-group list-group-flush ">
+              <li class="list-group-item">Gérer votre administratif professionnel et personnel</li>
+              <li class="list-group-item">Courriers, emails & appels</li>
+             <li class="list-group-item">Devis, facturations, suivis & relance</li>
+              <li class="list-group-item">Relai de votre comptabilité et suivi de </li>
+             <li class="list-group-item">Déplacements (transports, locations, hôtels)</li>
+              <li class="list-group-item">Propositions commerciales, contrats,  charges</li>
+             </ul> 
         </div>
-    
-        <div class="card col-md-3">
-         
+
+        <div class="card col-md-4 boxshadow">
           <div class="card-body">
-          <h2 class="card-title h3-like">Gestion Humaine</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <h2 class="card-title h3-like">Gestion Humaine</h2>
+             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
-                     <ul class="list-group list-group-flush ">
-                      <li class="list-group-item">Aide au recrutement : Analyse des besoins, évaluations des candidats, entretiens</li>
-                      <li class="list-group-item">Personnel en place : besoins et mise en place des formations, suivi et comptes rendu</li>
-                      <li class="list-group-item">Entrées et sorties (Fiches de poste, contrats, organismes sociaux, médecine du travail)</li>
-                    </ul>
+           <ul class="list-group list-group-flush ">
+              <li class="list-group-item">Aide au recrutement : Analyse des valuations des candidats, entretiens</li>
+              <li class="list-group-item">Personnel en place : besoins et mise es formations, suivi et comptes rendu</li>
+             <li class="list-group-item">Entrées et sorties (Fiches de poste, organismes sociaux, médecine du travail)</li>
+           </ul>
         </div>
 
-        
-    <div class="card col-md-3">
-      
-      <div class="card-body">
-      <h2  class="card-title h3-like">Communication & Stratégie commerciale</h2>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card col-md-4 boxshadow">
+          <div class="card-body">
+            <h2  class="card-title h3-like">Communication & Stratégie commerciale</h2>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         </div>
+         <ul class="list-group list-group-flush ">
+           <li class="list-group-item">Gérer votre réseau (LinkedIn, Facebook, Blog)</li>
+           <li class="list-group-item">Alimenter votre site internet en contenu (articles, images)</li>
+           <li class="list-group-item">Mettre en place une stratégie de communication digitale</li>
+           <li class="list-group-item">Coordonner différents services et projets</li>
+         </ul>
        </div>
-      <ul class="list-group list-group-flush ">
-        <li class="list-group-item">Gérer votre réseau (LinkedIn, Facebook, Blog)</li>
-        <li class="list-group-item">Alimenter votre site internet en contenu (articles, images)</li>
-        <li class="list-group-item">Mettre en place une stratégie de communication digitale</li>
-        <li class="list-group-item">Coordonner différents services et projets</li>
-      </ul>
-    </div>
 
-    </div>
-
- 
-    <div class="container mtxl">
-
-  <div class="row boxreussir">
-    <h2 class="h3-like col-md-4 h2-mission">Comment réussir la mission ?</h2>
-    <div class="col-md-8 p-mission">
-      <p>Je suis une collaboratrice fiable, enthousiaste et à l'écoute.</p>
-      <p>J'ai une grande capacité d'adaptation à tout type de projet.</p>
-      <p>J'effectue un feedback permanent et journalier avec un décompte des heures travaillées.</p>    
-      <p>Je pratique le télétravail depuis de nombreuses années car il me permet d'être efficace et d'avoir un bon équilibre vie pro/vie  perso.</p>  
-  
+      </div>
     </div>
   </div>
-</div>
- </div>
- 
 </section>
 
 

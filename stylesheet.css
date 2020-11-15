@@ -152,6 +152,7 @@ ul{
 	align-self: center;
 	text-align: center;
 	background:white;
+	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
 	
 }
 
@@ -163,6 +164,7 @@ ul{
 /* intro2 */
 .a-img-txt{
 	display:grid; 
+	
   }
   
   /* les enfants se superposent */
@@ -197,6 +199,7 @@ ul{
   /* le survol */
   .a-txt:hover{
 	opacity:1;
+	
 	
   }
   .a-img-txt:hover .a-img{
@@ -242,17 +245,16 @@ ul{
 
 
 
-/* section mon parcours */
+/* bouton mon parcours */
 /*--------------------------*/
-.parcours{
-	justify-content: space-evenly;
-	background-color: white;
+/* boxshadow */
+.boxshadow{
+	
+	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
 }
 
 
-.un{
-	text-align: center;
-}
+
 
 
 /* Common button styles */
@@ -261,6 +263,7 @@ ul{
 	display:flex;
 	justify-content: center;
 	align-items: center;
+
 }
 .button {
 	min-width: 150px;
@@ -275,6 +278,7 @@ ul{
 	z-index: 1;
 
 	-moz-osx-font-smoothing: grayscale;
+	
 }
 .button:focus {
 	outline: none;
@@ -370,7 +374,7 @@ align-items: center;
 }
 
 .h2-mission{
-	font-weight: 800;
+	
 	align-self: center;
 	text-align: center ;
 }
@@ -383,7 +387,7 @@ align-items: center;
 	background-color: white;
 	position: relative;
 	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
-	border: 3px solid #f2b3c6;
+	border: 1px solid #f2b3c6;
 	
 }
 .boxreussir:after, .boxreussir:before{
@@ -417,6 +421,16 @@ align-items: center;
 .boxreussir:before {
 	background-color: #f2b3c6;
 	  clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+}
+
+ /* ************************************************compétences ****************************************************/
+
+
+.competencescontenu{
+	justify-content: space-evenly;
+}
+.competencesdomaine{
+	justify-content: space-between;
 }
 
 
