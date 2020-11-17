@@ -102,10 +102,11 @@ require_once 'inc/header.php';
       <div class="ptxxl pbl banner">
         <?php
          echo $contenu;
+        
         ?>
       <div class="container">
         <form id="contact" class="form" method="post" action="mecontacter.php" >  
-            <div class="divform ptm">
+            <div class=" divform ptm" style="background:yellow;" >
                 <div class="mbs">
                  <label for="nom">Votre nom</label>
                  <input type="text" class="form-control" id="nom" name="nom" autofocus>
