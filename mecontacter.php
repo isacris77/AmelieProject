@@ -99,53 +99,94 @@ require_once 'inc/header.php';
       ?>
    
 
-      <div class="ptxxl pbl banner">
+<div class="ptxxl pbl banner">
         <?php
          echo $contenu;
         
         ?>
-      <div class="container">
-        <form id="contact" class="form" method="post" action="mecontacter.php" >  
-            <div class=" divform ptm" style="background:yellow;" >
-                <div class="mbs">
-                 <label for="nom">Votre nom</label>
-                 <input type="text" class="form-control" id="nom" name="nom" autofocus>
+  <div class="container">
+
+    <div class="row justify-content-between bg-light">
+       <div class="localisation cold-md-6 ptm">
+
+         <table>
+        <tr>
+          <td><img src="Images\icon\marker.png" alt=""></td>
+          <td class="font-weight-bold"> Localisation :</td>
+          <td>Montpellier, France</td>
+        </tr>
+        
+        <tr>
+          <td><img src="Images\icon\homeoffice.png" alt=""></td>
+          <td class="font-weight-bold">Téletravail :</td>
+          <td>Missions majoritairement à distance</td>
+        </tr>
+         </table>
+
+    
+          <hr class="my-4">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92442.6837966916!2d3.8041216710727115!3d43.61000057056439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6af0725dd9db1%3A0xad8756742894e802!2sMontpellier!5e0!3m2!1sfr!2sfr!4v1605722238823!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      
+       </div>
+
+       <form id="contact" class="form col-md-5" method="post" action="mecontacter.php" >  
+            <div class=" divform ptm" >
+
+                <div class="row mbs">
+                  <div class=" col-md-6 ">
+                     <label for="nom">Votre nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" autofocus>
+                  </div>
+                  
+                  <div class=" col-md-6 ">
+                     <label for="prenom">Votre prénom </label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" >
+                  </div>
                 </div>
-                <div class="mbs">
-                  <label for="prenom">Votre prénom </label>
-                  <input type="text" class="form-control" id="prenom" name="prenom" >
-                </div>
-                <div class="mbs">
-                 <label for="societe">Nom de votre société</label>
+
+                <div class="row mbs">
+                  <div class=" col-md-6 ">
+                  <label for="societe">Nom de votre société</label>
                  <input type="text" class="form-control" id="societe" name="societe" >
-                </div>
-              
-                <div class="mbs">
-                 <label for="telephone">Téléphone</label>
+                  </div>
+                  
+                  <div class=" col-md-6 ">
+                  <label for="telephone">Téléphone</label>
                  <input type="text" class="form-control" id="telephone" name="telephone">
+                  </div>
                 </div>
+
+                
               
                 <div class="mbs">
                  <label for="email">E-mail : </label>
                  <input type="email" class="form-control" id="email" name="email"  >
                 </div>
-              
+
+                <hr class="my-4">
+             
                 <div class="mbs">
-                  <label for="adresse">Adresse</label>
-                  <input type="text" class="form-control" id="adresse" name="adresse">
+                   <label for="adresse">Adresse</label>
+                    <input type="text" class="form-control" id="adresse" name="adresse">
                 </div>
-              <div class="mbs">
-                 <label for="ville">Ville</label>
-                 <input type="text" class="form-control" id="ville" name="ville">
-              <div>
+                   
+                <div class="row mbs">
+                  <div class=" col-md-6 ">
+                  <label for="ville">Ville</label>
+                     <input type="text" class="form-control" id="ville" name="ville">
+                  </div>
+                  
+                  <div class=" col-md-6 ">
+                  <label for="cp">Code postal</label>
+                      <input type="text" class="form-control" id="cp" name="cp">
+                  </div>
+                </div>
+
+                <hr class="my-4">
+               
                 
-              <div class="mbs">
-                 <label for="cp">Code postal</label>
-                <input type="text" class="form-control" id="cp" name="cp">
-        
-              </div>
-                
-                <div  class="mbs">
+
+                <div class="mbs">
                     <label for="demande">Votre demande concerne:</label>
                     <select id="demande" class="form-control" name="demande">
                         <option selected value="Gestion d\'entreprise">Gestion d'entreprise</option>
@@ -154,20 +195,26 @@ require_once 'inc/header.php';
                         <option value="Autre demande">Autre demande</option>
                     </select>
                 </div> 
-                <div class="mbs">
+
+                <div>
                  <p>Votre Message</p>
                 <textarea class="col" name="message" id="message"  rows="5"></textarea>
                 </div>
+                <hr class="my-4">
                
-               <div class="contactbutton">
-                 <input type="submit" ></input>
-                </div> 
+               
+                <input type="submit" ></input>
+
+                </div>
+               
+                 
               
               
-            </div>
-                      
+           
+           </div>           
         </form>
-        </div>
+  </div>
+    
 </div>
 
 
