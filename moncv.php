@@ -10,17 +10,21 @@ require_once 'inc/header.php';
 <!-- section experience -->
 <section >
 
-  <div class="container-fluid">
-  <div class="experience ptxxl" >
-    <h1 class="h2-like">Expériences</h1> 
-  <div>
+  <div class="container banner">
+    <div class="row justify-content-around  ptxxl"> 
+
+      <div class="col-md 3">
+       <h2>Experiences</h2>
+      </div>  
 
 
+  <!--  -->
 
-  <div class="row justify-content-around banner">
-     <div class="jumbotron col-md-5">
-         <div class="row">
-            <div class="col-md-8">
+<div class="col-md-9 ">
+
+   
+      <div class="row mbl bg-light">
+        <div class="col-md-8">
              <h2 class="h3-like">Ressources Humaines et chef marketing </h2>
               <hr class="my-4">
     
@@ -30,9 +34,9 @@ require_once 'inc/header.php';
               <p>Élaboration & Analyse des indicateurs de suivis RH et Financiers</p>
               <p>Garante de la communication interne (Animation de réunions quotidiennes et hebdomadaires, gazettes mensuelles, séminaires) & externe (propositions commerciales, site internet, réseaux sociaux)</p>
               <p>Chef de projets internes</p> 
-            </div>
+        </div>
 
-            <div class= " col-md-4">
+        <div class= "col-md-4">
              <p><img src="Images\icon\company50.png" alt="">Hexagonal Consulting</p>
              <p><img src="Images\icon\marker.png" alt="">Télétravail</p>
              <p><img src="Images\icon\calendar.png" alt="">janvier 2018 - avril 2019</p>
@@ -47,15 +51,16 @@ require_once 'inc/header.php';
                <li class="hashtag">Communicative</li>
                <li class="hashtag">Force de proposition</li>
              </ul>
-            </div>
-          </div>
-        </div> 
-
-               
-     <div class="jumbotron col-md-5">
-        <div class="row">
+        </div>
+      </div>
+   
     
-         <div class="col-md-8">
+
+<!--  -->
+       
+      <div class="row mbl bg-light">
+    
+        <div class="col-md-8">
             <h2 class="h3-like">Entrepreneur</h2>
             <p>Création SAS - Expertise en solutions informatiques</p>
             <p><img src="Images\icon\coin.png">CA de 310 000€ la 2e année</p>
@@ -69,10 +74,10 @@ require_once 'inc/header.php';
            <p>Organisation via la méthode Agile</p>
             <p>Comptabilité - Note de frais - Rapprochement comptable</p>
             <p>Tableaux de bord - Planning équipe / projets</p>
-          </div>
+        </div>
 
 
-         <div class="col-md-4">
+          <div class="col-md-4">
            <p><img src="Images\icon\company50.png" alt="">Hexagonal Consulting</p>
             <p><img src="Images\icon\marker.png" alt="">Télétravail</p>
            <p><img src="Images\icon\calendar.png" alt="">mars 2016 - décembre 2017</p>
@@ -92,17 +97,19 @@ require_once 'inc/header.php';
               <li class="hashtag">Polyvalence</li>   
             </ul>
           </div> 
-        </div>
-     </div>
-    </div> <!--finb row-->
-
-
-     <div class="row justify-content-around banner">
-
-       <div class="jumbotron col-md-5">
-          <div class="row">
+          
+        
+       </div>
     
-           <div class="col-md-8">
+
+    
+
+
+     
+<!--  -->
+
+      <div class="row mbl bg-light">
+        <div class="col-md-8">
               <h2 class="h3-like">Entrepreneur</h2>
               <p>Création SAS - Vente de matériels de loisirs créatifs en ligne</p>
               <p><img src="Images\icon\coin.png">CA: 57 000€ en 6 mois</p>
@@ -117,9 +124,9 @@ require_once 'inc/header.php';
               <p>Tableaux de bord</p>
               <p>Suivi des commandes ( en moyenne 420 / mois)</p>
               <p>Gestion Clientèle</p>
-            </div>
+        </div>
 
-            <div class="col-md-4">  
+        <div class="col-md-4">  
               <p><img src="Images\icon\company50.png" alt=""> A Very Bad Sheep</p>
               <p><img src="Images\icon\marker.png" alt="">Dreux</p>
               <p><img src="Images\icon\calendar.png" alt="">février 2013 - janvier 2016</p>
@@ -135,14 +142,13 @@ require_once 'inc/header.php';
                 <li class="hashtag">Gestion du stress</li>
                 <li class="hashtag">Créativité</li> 
               </ul>
-             </div>
-          </div>
         </div>
+      </div>
+       
       
-         <div class="jumbotron  col-md-5">
-           <div class="row">
-   
-            <div class="col-md-8">
+      <!--  -->
+      <div class="row bg-light ">
+        <div class="col-md-8">
              <h2 class="h3-like">Assistante Acquisition</h2>
                   
              <hr class="my-4">
@@ -151,15 +157,15 @@ require_once 'inc/header.php';
              <p>Gestion de projet ouverture de centre (prospection de locaux, commandes ouverture de centre, inauguration d’ouverture, communication locale)</p>
              <p>Reporting</p>
              <p>Gestion juridique (baux, crédit bail), documents comptables et juridiques</p>
-           </div>
+        </div>
 
-            <div class="col-md-4">      
+        <div class="col-md-4">      
               <p><img src="Images\icon\company50.png" alt=""> Audika France</p>
               <p><img src="Images\icon\marker.png" alt=""> Paris</p>   
                <p><img src="Images\icon\calendar.png" alt="">janvier 2010 - janvier 2013 </p>
              <hr class="my-4">
-            <img src="Images/icon/hashtag.png">
-            <ul>
+             <img src="Images/icon/hashtag.png">
+             <ul>
               <li class="hashtag">Autonomie</li>
               <li class="hashtag">Rigueur</li>
               <li class="hashtag">Organisation</li>
@@ -171,10 +177,15 @@ require_once 'inc/header.php';
              <li class="hashtag">Créativité</li>
              <li class="hashtag">Persévérance</li>
              <li class="hashtag">Microsoft Excel</li> 
-            </ul>
-            </div>
-          </div>
-       </div>
+             </ul>
+            
+        </div>
+
+      </div>
+        
+<!--  -->
+     
+</div>
     </div>
   </div>
 </section>

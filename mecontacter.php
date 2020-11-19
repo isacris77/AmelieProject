@@ -62,6 +62,11 @@ if (!empty($_POST)) {
           // si aucun message d'erreur on valide et envoyez le formulaire en BDD
   
           if (empty($contenu)) {
+            
+             foreach ($_POST as $indice => $valeur) {
+               $_POST[$indice] = htmlspecialchars($valeur, ENT_QUOTES);
+           }
+
   
            
   
@@ -92,59 +97,6 @@ if (!empty($_POST)) {
   } // fin du if(!empty($_POST))
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //---------------------------------AFFICHAGE-------------------
 require_once 'inc/header.php';
       ?>
@@ -155,12 +107,15 @@ require_once 'inc/header.php';
          echo $contenu;
         
         ?>
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="row justify-content-between bg-light">
+    <div class="row justify-content-around bg-light">
        <div class="localisation cold-md-6 ptm">
 
-         <table>
+       <h2>Prise de contact</h2>
+       <hr class="my-4">
+
+        <table>
         <tr>
           <td><img src="Images\icon\marker.png" alt=""></td>
           <td class="font-weight-bold"> Localisation :</td>
@@ -180,8 +135,12 @@ require_once 'inc/header.php';
       
        </div>
 
-       <form id="contact" class="form col-md-5" method="post" action="mecontacter.php" >  
-            <div class=" divform ptm" >
+       <form id="contact" class="form  ptm col-md-6" method="post" action="mecontacter.php" >  
+           
+                <div class="mbs">
+                   <label for="societe">Nom de votre société</label>
+                   <input type="text" class="form-control" id="societe" name="societe" >
+                </div>
 
                 <div class="row mbs">
                   <div class=" col-md-6 ">
@@ -195,26 +154,19 @@ require_once 'inc/header.php';
                   </div>
                 </div>
 
-                <div class="row mbs">
-                  <div class=" col-md-6 ">
-                  <label for="societe">Nom de votre société</label>
-                 <input type="text" class="form-control" id="societe" name="societe" >
-                  </div>
-                  
-                  <div class=" col-md-6 ">
-                  <label for="telephone">Téléphone</label>
-                 <input type="text" class="form-control" id="telephone" name="telephone">
-                  </div>
-                </div>
-
                 
-              
-                <div class="mbs">
-                 <label for="email">E-mail : </label>
-                 <input type="email" class="form-control" id="email" name="email"  >
+                <div class="row mbs">  
+                  <div class=" col-md-6 ">
+                    <label for="telephone">Téléphone</label>
+                   <input type="text" class="form-control" id="telephone" name="telephone">
+                  </div> 
+                  <div class="col-md-6">
+                    <label for="email">E-mail : </label>
+                    <input type="email" class="form-control" id="email" name="email"  >
+                  </div>
                 </div>
 
-                <hr class="my-4">
+             
              
                 <div class="mbs">
                    <label for="adresse">Adresse</label>
@@ -265,7 +217,7 @@ require_once 'inc/header.php';
               
               
            
-           </div>           
+                    
         </form>
   </div>
     

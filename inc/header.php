@@ -23,7 +23,7 @@
   
     <nav id="accueil" class=" navbar navbar-expand-lg navbar-light bg-light">
   
-        <a class="navbar-brand" href="index.php">Amélie Nadalini - Office manager</a>
+        <a class="navbar-brand" href="<?php echo RACINE_SITE. 'index.php';?>">Amélie Nadalini - Office manager</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,9 +51,37 @@
           <li class="nav-item">
             <a class="nav-link" href="moncv.php">Mon CV</a>
           </li> 
-          <li class="nav-item">
-              <a class="nav-link" href="inscription.php">Me connecter</a>
-             </li>
+          <?php
+
+
+          if (estConnecte()){ // si membre connecte
+                    echo '<li><a href=" ' . RACINE_SITE . 'profil.php" class="nav-link">Profil</a></li>';
+
+                    echo '<li><a href=" ' . RACINE_SITE . 'connexion.php?action=deconnexion" class="nav-link">Deconnexion</a></li>';
+
+               } else{ // membre non connecte
+                    echo '<li><a href=" ' . RACINE_SITE . 'inscription.php" class="nav-link">Inscription</a></li>';
+
+                    echo '<li><a href=" ' . RACINE_SITE . 'connexion.php" class="nav-link">Connexion</a></li>';
+
+               }
+
+
+
+
+                
+                if (estAdmin()) { // si membre est administrateur
+                    echo '<li><a href=" ' . RACINE_SITE . 'admin/gestion_boutique.php" class="nav-link">Gestion de la boutique</a></li>';
+                    echo '<li><a href=" ' . RACINE_SITE . 'admin/gestion_membre.php" class="nav-link">Gestion des membres</a></li>';
+
+               
+               
+                }
+
+
+                ?>
+
+
              <li class="nav-item">
               <a class="nav-link" href="mecontacter.php">Contact</a>
              </li>

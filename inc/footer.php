@@ -3,10 +3,7 @@
 
 </main>
 		
-<footer class="bg-light" >
-  <p>Sticky Footer</p>
-</footer>
-    
+
 
 
 
