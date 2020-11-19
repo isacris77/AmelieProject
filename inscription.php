@@ -47,7 +47,7 @@ if(isset($_POST['forminscription'])) {
 
 //---------------------------------AFFICHAGE-------------------
 require_once 'inc/header.php';
-echo $contenu;
+echo $erreur;
 ?>
 
 <!-- essai -->

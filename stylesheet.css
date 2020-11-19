@@ -347,17 +347,6 @@ align-items: center;
 
 
 /* footer */
-footer {
-	/* important! */
-	bottom: 0;
-	height: 64px; /* height = body margin-bottom */
-	position: absolute;
-	width: 100%;
-  
-	/* optional */
-	border-top: 1px solid lightgrey;
-	text-align: center;
-  }
 
 
 
