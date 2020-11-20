@@ -115,7 +115,7 @@ require_once 'inc/header.php';
        <h2>Prise de contact</h2>
        <hr class="my-4">
 
-        <table>
+        <table class="mbs">
         <tr>
           <td><img src="Images\icon\marker.png" alt=""></td>
           <td class="font-weight-bold"> Localisation :</td>
@@ -128,6 +128,10 @@ require_once 'inc/header.php';
           <td>Missions majoritairement à distance</td>
         </tr>
          </table>
+
+        <p class="font-weight-bold">Rejoignez-moi sur Malt et/ou linkedin</p>
+        <a href="https://www.malt.ch/profile/amelienadalini"target=_blank><img src="Images/Daco_4071004.png" alt="logo de linkedin" height=50 width=50 ></a>
+        <a href="https://fr.linkedin.com/in/amelienadalini"target=_blank><img src="Images/logo_malt.svg" alt="logo de malt" height=50 width=50 ></a>
 
     
           <hr class="my-4">

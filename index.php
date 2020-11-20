@@ -23,6 +23,7 @@ require_once 'inc/header.php';
           <li>Le manque de moyen</li>
           <li>L'absence de soutien</li>
         </ul>
+      
       </div>
 
       <div class="col-md-6 ">

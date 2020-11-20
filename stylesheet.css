@@ -24,7 +24,7 @@ html {
 body {
 	position: relative;
 	font-family: 'raleway',Georgia, 'Times New Roman', Times, serif;
-	font-size: 0.875rem; /* soit 16px */
+	font-size: 0.8rem; 
 	line-height: 1.5;
 	font-weight: 400;
 	color: #000000;
@@ -50,17 +50,17 @@ h6, .h6-like {
 	
 }
 h1, .h1-like {
-	font-size:5em;
+	font-size:4em;
 	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 h2, .h2-like {
-	font-size: 3em;
+	font-size: 2em;
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 
 }
 
 h3, .h3-like {
-	font-size: 1.75em;
+	font-size: 1.50em;
 	font-family: 'Alako', 'raleway', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -96,7 +96,7 @@ z-index: 1;
 .nav a{
 	color:black;
 	font-family: 'raleway', Georgia, 'Times New Roman', Times, serif;  ;
-	font-size: 0.875rem;
+	font-size: 0.8rem;
 }
 
 .nav-link:hover{
@@ -245,26 +245,7 @@ ul{
 
 
 
-/* bouton mon parcours */
-/*--------------------------*/
-/* boxshadow */
-.boxshadow{
-	
-	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
-}
 
-
-
-
-
-/* Common button styles */
-
-.parcoursbutton{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-
-}
 
 
 
@@ -341,11 +322,17 @@ align-items: center;
 
 
 
+
+
+/* *************mon cv ***************** */
+
 .jumbotron{
 	background:#f8f9fa;
 }
 
-
+.hashtag{
+	font-size:0,75rem;
+}
 /* footer */
 
 

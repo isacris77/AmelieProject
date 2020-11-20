@@ -11,7 +11,7 @@ require_once 'inc/header.php';
 <section >
 
   <div class="container banner">
-    <div class="row justify-content-around  ptxxl"> 
+    <div class="row justify-content-around ptxxl"> 
 
       <div class="col-md 3">
        <h2>Experiences</h2>
