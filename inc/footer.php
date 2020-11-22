@@ -2,6 +2,43 @@
 <!-- footer -->
 
 </main>
+  <!-- Site footer -->
+  <footer class="site-footer bg-light">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-sm-12 col-md-6">
+            <h6>A propos</h6>
+            <p class="text-justify">Amelie Nadalini <i>Office manager </i>Je vous aide à vous concenter sur votre activité commerciale en prenant en charge un bon nombre de fonctions et de responsabilités (gestion administrative du personnel, gestion des services généraux, suivi des budgets, gestion des flux d’information,communication et stratégie digitale etc.). </p>
+          </div>
+
+          
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Liens</h6>
+            <ul class="footer-links">
+              <li><a href="index.php">Accueil</a></li>
+              <li><a href="index.php#compétences">Domaines de compétences</a></li>
+              <li><a href="moncv.php">CV</a></li>
+              <li><a href="mecontacter.php">Me contacter</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Mentions légales</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row ">
+          <div class="col ">
+            <p class="copyright-text">Copyright &copy; 2020. Isabelle Cristini
+         
+            </p>
+          </div>
+
+         
+        </div>
+      </div>
+</footer>
 		
 
 

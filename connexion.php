@@ -89,17 +89,23 @@ echo $contenu; // pour les messages de connexion
 ?>
 <div class="container">
 <h1 class=" ptxxl">Connexion</h1>
-<form action="" method="post">
+    <form action="" method="post">
 
-    <div><label for="pseudo">Pseudo</label></div>
-    <div class="mbs"><input type="text" name="pseudo" id="pseudo"></div>
+ <div class="row mbs">       
+    <div class=" col-md-6 ">
+      <label for="pseudo">Pseudo</label>
+      <input type="text" class="form-control" name="pseudo" id="pseudo" value="<?php echo $_POST['pseudo'] ?? '';?>">
+    </div>
+    <div class=" col-md-6 ">
+      <label for="mdp">Mot de passe</label>
+      <input type="password" class="form-control" name="mdp" id="mdp" value="<?php echo $_POST['mdp'] ?? '';?>">
+    </div>
+  </div>  
+  <input type="submit" value="se connecter" class="btn btn-info">
 
-    <div><label for="mdp">Mot de passe</label></div>
-    <div class="mbs"><input type="password" name="mdp" id="mdp"></div>
 
-    <input type="submit" value="se connecter" class="btn btn-info"></div>
-
-</form>
+  </form>
+</div>  
 
 
 <?php

@@ -127,11 +127,11 @@ require_once 'inc/header.php';
           <td class="font-weight-bold">Téletravail :</td>
           <td>Missions majoritairement à distance</td>
         </tr>
-         </table>
+         </table> 
 
         <p class="font-weight-bold">Rejoignez-moi sur Malt et/ou linkedin</p>
-        <a href="https://www.malt.ch/profile/amelienadalini"target=_blank><img src="Images/Daco_4071004.png" alt="logo de linkedin" height=50 width=50 ></a>
-        <a href="https://fr.linkedin.com/in/amelienadalini"target=_blank><img src="Images/logo_malt.svg" alt="logo de malt" height=50 width=50 ></a>
+        <a href="https://fr.linkedin.com/in/amelienadalini"target=_blank><img src="Images/Daco_4071004.png" alt="logo de linkedin" height=50 width=50 ></a>
+        <a href="https://www.malt.ch/profile/amelienadalini"target=_blank><img src="Images/logo_malt.svg" alt="logo de malt" height=50 width=50 ></a>
 
     
           <hr class="my-4">
@@ -139,7 +139,7 @@ require_once 'inc/header.php';
       
        </div>
 
-       <form id="contact" class="form  ptm col-md-6" method="post" action="mecontacter.php" >  
+       <form id="contact" class="form  ptm col-md-6" method="post" action="" >  
            
                 <div class="mbs">
                    <label for="societe">Nom de votre société</label>

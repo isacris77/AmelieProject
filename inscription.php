@@ -111,53 +111,55 @@ if ($affiche_formulaire):
 ?>
 <div class="container"> 
 <h1 class=" ptxxl">Inscription</h1>
-<form method="post" class="form " action="">
- 
+
+<form id="inscription" method="post" class="form" action="">
+  
 
   <div class="row mbs">
     <div class=" col-md-6 ">
       <label for="pseudo">Pseudo</label>
-      <input type="text" name="pseudo" id="pseudo" value="<?php echo $_POST['pseudo'] ?? '';?>">
+      <input type="text" class="form-control" name="pseudo" id="pseudo" value="<?php echo $_POST['pseudo'] ?? '';?>">
     </div>
     <div class=" col-md-6 ">
       <label for="mdp">Mot de passe</label>
-      <input type="password" name="mdp" id="mdp" value="<?php echo $_POST['mdp'] ?? '';?>">
+      <input type="password" class="form-control" name="mdp" id="mdp" value="<?php echo $_POST['mdp'] ?? '';?>">
     </div>
   </div>
 
   <div class="row mbs">
     <div class=" col-md-6 ">
       <label for="nom">Nom</label>
-       <input type="text" name="nom" id="nom" value="<?php echo $_POST['nom'] ?? '';?>">
+       <input type="text" class="form-control"name="nom" id="nom" value="<?php echo $_POST['nom'] ?? '';?>">
      </div>
     <div class=" col-md-6 ">
      <label for="prenom">Prénom</label>
-      <input type="text" name="prenom" id="prenom" value="<?php echo $_POST['prenom'] ?? '';?>">
+      <input type="text" class="form-control" name="prenom" id="prenom" value="<?php echo $_POST['prenom'] ?? '';?>">
     </div>
   </div>
-    <div class="mbs">
+
+  <div class="mbs">
     <label for="email">Email</label>
-    <input type="text" name="email" id="email" value="<?php echo $_POST['email'] ?? '';?>">
+    <input type="text" class="form-control" name="email" id="email" value="<?php echo $_POST['email'] ?? '';?>">
   </div>
-  <div class="mbs"> <label for="adresse">Adresse</label>
-    <textarea name="adresse" id="adresse"  rows="10"><?php echo $_POST['adresse'] ?? '';?></textarea>
-    </div>
-   
 
-    <div class="row mbs">
-    <div class=" col-md-6 ">
-    <label for="code_postal">Code Postal</label>
-    <input type="text" name="code_postal" id="code_postal" value="<?php echo $_POST['code_postal'] ?? '';?>">
-    </div>
-    <div class=" col-md-6 ">
-    <label for="ville">Ville</label>
-   <input type="text" name="ville" id="ville" value="<?php echo $_POST['ville'] ?? '';?>">
-   </div>
-  </div>  
+  <div class="mbs"> 
+      <label for="adresse">Adresse</label>
+      <input type="text" class="form-control" id="adresse" name="adresse"><?php echo $_POST['adresse'] ?? '';?>
+  </div>
 
-   
+  <div class="row mbs">
+    <div class=" col-md-6 ">
+        <label for="ville">Ville</label>
+        <input type="text" class="form-control" id="ville" name="ville" value="<?php echo $_POST['ville'] ?? '';?>">
+    </div>
+                  
+    <div class=" col-md-6 ">
+      <label for="cp">Code postal</label>
+      <input type="text" class="form-control" name="code_postal" id="code_postal"value="<?php echo $_POST['code_postal'] ?? '';?>">
+    </div>
+    
+  </div>
   <input type="submit"  value="S'inscrire" class="btn btn-info">
- 
 </form>
 </div>
 
