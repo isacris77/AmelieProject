@@ -4,7 +4,7 @@ $affiche_formulaire = true; // Pour afficher le formulaire tant que le membre n'
 
 //--------------------TRAITEMENT PHP --------------------------------------
 
-debug($_POST);
+// debug($_POST);
 
 if(!empty($_POST)){ // si $_POST n'est pas vide c'est que le formulaire a Ã©tÃ© envoyÃ©
     // validation du formulaire :
@@ -22,7 +22,7 @@ if(!empty($_POST)){ // si $_POST n'est pas vide c'est que le formulaire a Ã©t�
 
 
              if (!isset($_POST['prenom']) || strlen($_POST['prenom']) < 1 || strlen($_POST['prenom'])  > 20) { 
-            $contenu.= '<div class="alert alert-danger">Le prÃ©nom doit contenir entre 1 et 20 caractères.</div>';
+            $contenu.= '<div class="alert alert-danger">Le prénom doit contenir entre 1 et 20 caractères.</div>';
           }
 
             if(!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL ) || strlen($_POST['email']) > 50 ){ // la fonction prÃ©dÃ©finie filter_var() avec l'argument FILTER_VALIDATE_EMAIL vÃ©rifie que le string fourni est un email
@@ -68,7 +68,7 @@ if(!empty($_POST)){ // si $_POST n'est pas vide c'est que le formulaire a Ã©t�
                     $succes=executeRequete(
                         "INSERT INTO membre (pseudo, mdp, nom, prenom, email, adresse, code_postal, ville, statut) VALUES (:pseudo, :mdp, :nom, :prenom, :email, :adresse, :code_postal, :ville, :statut) ", 
                         array(':pseudo' => $_POST['pseudo'],
-                        ':mdp' => $mdp, // on prend le mdp hachÃ© 
+                        ':mdp' => $mdp, 
                         ':nom' => $_POST['nom'],
                         ':prenom' => $_POST['prenom'],
                         ':email' => $_POST['email'],
@@ -85,7 +85,7 @@ if(!empty($_POST)){ // si $_POST n'est pas vide c'est que le formulaire a Ã©t�
 
                     $contenu .= '<div class="alert alert-success">Vous avez ajouté le contact. </div>';
 
-                    $affiche_formulaire = false; // pour ne plus afficher le formulaire d'insciption ci-dessous
+                    $affiche_formulaire = false; 
 
 
 
@@ -105,12 +105,13 @@ if(!empty($_POST)){ // si $_POST n'est pas vide c'est que le formulaire a Ã©t�
 require_once 'inc/header.php';
 ?>
 
+
+<div class="container"> 
+<h1 class=" ptxxl">Inscription</h1>
 <?php
 echo $contenu; 
 if ($affiche_formulaire):  
 ?>
-<div class="container"> 
-<h1 class=" ptxxl">Inscription</h1>
 
 <form id="inscription" method="post" class="form" action="">
   

@@ -23,26 +23,27 @@ require_once 'inc/header.php';
           <li>Le manque de moyen</li>
           <li>L'absence de soutien</li>
         </ul>
+        <p>Je vous aide à vous concentrer sur votre activité commerciale en prenant en charge un bon nombre de fonctions et de responsabilités (gestion administrative du personnel, gestion des services généraux, suivi des budgets, gestion des flux d’information,communication et stratégie digitale etc.).</p>
       
       </div>
 
       <div class="col-md-6 ">
         <div class="row intro2 justify-content-around">
-          <a class="a-img-txt mbl plm ptm" href="#gh">
+          <a class="a-img-txt mbl plm ptm" href="#competences">
               <img class="a-img" src="Images/people.png" alt="icon de groupe de personne">
               <span class="a-txt c2">Gestion humaine</span>
           </a>
-          <a class="a-img-txt mbl ptm " href="#section2" >
+          <a class="a-img-txt mbl ptm " href="#competences" >
               <img class="a-img" src="Images/info.png"2alt="icone de tchat" >
               <span class="a-txt c1" >Amélie en<br>quelques mots</span>
          </a> 
         </div>
         <div class="row intro2 justify-content-around">
-          <a class="a-img-txt plm pbm" href="#com"> 
+          <a class="a-img-txt plm pbm" href="#competences"> 
            <img class="a-img" src="Images/like.png" alt="icon pouce facebook">
            <span class="a-txt c1">Communication & <br>& stratégie digiale</span>
           </a>
-          <a class="a-img-txt pbm" href="#ge">
+          <a class="a-img-txt pbm" href="#competences">
            <img class="a-img" src="Images/folder.png" alt="icone de dossier">
            <span class="a-txt c2">Gestion d'entreprise</span>
           </a>

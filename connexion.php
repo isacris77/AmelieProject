@@ -4,11 +4,13 @@ require_once 'inc/init.php';
 //--------------------TRAITEMENT PHP--------------------
 $message =''; 
 
+
+
 // debug($_GET);
 
 if (isset($_GET['action']) && $_GET['action'] == 'deconnexion') { 
 
-    unset($_SESSION['membre']);
+    unset($_SESSION['membre']); 
     $message='<div class="alert alert-info">Vous êtes deconnecté?</div>';
 
 }
@@ -23,18 +25,18 @@ if(estConnecte()){
 
 
 // 1 - traitement du formulaire
-// debug($_POST);
+debug($_POST);
 
 if (!empty($_POST)){ 
 
-       
+      
 
         if(empty($_POST['pseudo']) || empty($_POST['mdp'])){ 
             $contenu.='<div class="alert alert-danger">Les identifiants sont obligatoires</div>';
         }
 
 
-        
+    
 
         if(empty($contenu)) { 
 
@@ -43,15 +45,16 @@ if (!empty($_POST)){
             if($resultat -> rowCount()==1){ 
                 $membre = $resultat->fetch(PDO::FETCH_ASSOC); 
 
-                // debug($membre); 
+            
 
 
                
                 if(password_verify($_POST['mdp'],$membre['mdp'])){ 
+                   
 
                     $_SESSION['membre'] = $membre; 
 
-             
+                   
                     header('location:profil.php'); 
                     exit(); 
 
@@ -83,12 +86,13 @@ require_once 'inc/header.php';
 ?>
 
 
+
+<div class="container">
+<h1 class=" ptxxl">Connexion</h1>
 <?php
 echo $message; // pour les messages de deconnexion 
 echo $contenu; // pour les messages de connexion
 ?>
-<div class="container">
-<h1 class=" ptxxl">Connexion</h1>
     <form action="" method="post">
 
  <div class="row mbs">       
@@ -101,7 +105,7 @@ echo $contenu; // pour les messages de connexion
       <input type="password" class="form-control" name="mdp" id="mdp" value="<?php echo $_POST['mdp'] ?? '';?>">
     </div>
   </div>  
-  <input type="submit" value="se connecter" class="btn btn-info">
+  <input type="submit" value="se connecter" class="btn btn-info mbl">
 
 
   </form>

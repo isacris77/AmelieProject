@@ -8,8 +8,9 @@
         <div class="row justify-content-between">
           <div class="col-sm-12 col-md-6">
             <h6>A propos</h6>
-            <p class="text-justify">Amelie Nadalini <i>Office manager </i>Je vous aide à vous concenter sur votre activité commerciale en prenant en charge un bon nombre de fonctions et de responsabilités (gestion administrative du personnel, gestion des services généraux, suivi des budgets, gestion des flux d’information,communication et stratégie digitale etc.). </p>
-          </div>
+            <p class="text-justify">Amelie Nadalini SAS<i>Office manager </i></p>
+            <p> Adresse : 5 Av. Ingres 75016 Paris</p>
+            <p>Numéro de SIRET : 83210253700012</p>
 
           
 

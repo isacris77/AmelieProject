@@ -1,4 +1,3 @@
-
 <?php
 require_once 'inc/init.php'; 
 /* Exercice:
@@ -32,12 +31,20 @@ if(isset($_GET['action']) && $_GET['action'] == 'supprimer'){ // le Isset est ne
 
 }
 
-require_once 'inc.header.php';
-?>
 
+
+
+
+
+
+
+
+
+require_once 'inc/header.php'; 
+?>
 <h1 class="mt-4">Profil</h1>
 
-<h2>Bonjour <?php echo $_SESSION['membre']['prenom']. ' ' . $_SESSION['membre']['nom'];   ?> ! </h2>
+<h2>Bonjour <?php echo $_SESSION['membre']['prenom']. ' ' . $_SESSION['membreun']['nom'];   ?> ! </h2>
 
 <?php
 
@@ -46,13 +53,12 @@ if(estAdmin()) {
 
 }
 ?>
-
 <hr>
-<h3>Vos coordonnées</h3>
+<h3>Vos coordonnÃ©es</h3>
 <ul>
         <li>Email: <?php echo $_SESSION['membre']['email'];?> </li>
-        <li>Adresse: <?php echo $_SESSION['membre']['adresse'];?></li>
-        <li>Code Postal: <?php echo $_SESSION['membre']['code_postal'];?></li>
+        <li>Adresse: <?php echo $_SESSION['membre']['adresse'];?> </li>
+        <li>Code Postal: <?php echo $_SESSION['membre']['code_postal'];?> </li>
         <li>Ville: <?php echo $_SESSION['membre']['ville'];?> </li>
 </ul>
 
@@ -71,40 +77,3 @@ require_once 'inc/footer.php';
 
 
 
-
-
-
-
-
-require_once 'inc/header.php'; 
-?>
-<h1 class="mt-4">Profil</h1>
-
-<h2>Bonjour <?php echo $_SESSION['membre']['prenom']. ' ' . $_SESSION['membre']['nom'];   ?> ! </h2>
-
-<?php
-
-if(estAdmin()) {
-    echo '<p>Vous êtes administrateur</p>';
-
-}
-?>
-<hr>
-<h3>Vos coordonnées</h3>
-<ul>
-        <li>Email: <?php echo $_SESSION['membre']['email'];?> </li>
-        <li>Adresse: <?php echo $_SESSION['membre']['adresse'];?> </li>
-        <li>Code Postal: <?php echo $_SESSION['membre']['code_postal'];?> </li>
-        <li>Ville: <?php echo $_SESSION['membre']['ville'];?> </li>
-</ul>
-
-<hr>
-
-
-<p><a href="profil.php?action=supprimer" onclick="return (confirm('Etes vous sur de vouloir supprimer votre compte?'))">Supprimer mon compte</a></p>
-
-
-
-
-<?php
-require_once 'inc/footer.php'; 

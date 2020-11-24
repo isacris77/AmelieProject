@@ -147,7 +147,7 @@ require_once 'inc/header.php';
        
       
       <!--  -->
-      <div class="row bg-light ">
+      <div class="row mbl bg-light ">
         <div class="col-md-8">
              <h2 class="h3-like">Assistante Acquisition</h2>
                   

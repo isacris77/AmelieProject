@@ -1,4 +1,6 @@
 <?php
+//FONCTIONS DU SITE 
+
 
 function debug($var){
     echo '<pre>';
@@ -6,17 +8,18 @@ function debug($var){
     echo '</pre>';    
 }
 
+
 //-----------
 // fonction qui indique si l'internaute est connecté
 
 function estConnecte(){
-    if (isset($_SESSION['membre'])){ // si membre existe dans la session c'est que l'internaute est passé par la page de connexion avec les bons pseudos et mdp
+    if (isset($_SESSION['membre'])){ 
 
 
-        return true; // il est connecté
+        return true; 
 
     }   else{
-            return false; // il n'est pas connecté
+            return false; 
     }
 
 }
@@ -24,38 +27,39 @@ function estConnecte(){
 
 //fonction qui indique si le membre connecté est administrateur 
 
-function estadmin(){ // si le membre est connecté alors on regarde son statut dans la session. S'il vaut 1 alors il est bien admin. 
+function estadmin(){ 
     if (estconnecte() && $_SESSION['membre']['statut'] == 1 ){
-        return true; // le membre est admin connecté
+        return true; 
     } else{
-        return false; // il ne l'est pas 
+        return false; 
     }
 }
 
 
+//----------
+// fonction qui exÃ©cute les requetes
 
-
-function executeRequete($requete, $param = array()){
-
-
+function executeRequete($requete, $param = array()){ 
+   
     foreach ($param as $indice => $valeur) {
-       $param[$indice] = htmlspecialchars($valeur);
+        $param[$indice] = htmlspecialchars($valeur);
     }
 
-    global $bdd;
+    global $bdd; 
 
+    $resultat = $bdd->prepare($requete); 
+    $succes = $resultat->execute($param); 
 
-    $resultat = $bdd->prepare($requete);
+  
+    
+    if($succes){ 
 
-    $succes = $resultat->execute($param);
+        return $resultat;
 
-    if ($succes) {
-       return $resultat;
     } else {
-        return false;
+        return false; 
     }
 }
-
 
 
 
