@@ -8,24 +8,24 @@ require_once 'inc/header.php';
 
 
 <!-- section experience -->
-<section >
+<section class="banner">
 
-  <div class="container banner">
-    <div class="row justify-content-around ptxxl"> 
+  <div class="container   ">
+    <div class=" ptxxl"> 
 
-      <div class="col-md 3">
-       <h2>Experiences</h2>
+      <div class="exp mbl">
+       <h1>Experiences</h1>
       </div>  
 
 
   <!--  -->
 
-<div class="col-md-9 ">
+<div >
 
    
       <div class="row mbl bg-light">
         <div class="col-md-8">
-             <h2 class="h3-like">Ressources Humaines et chef marketing </h2>
+             <h2 class="mts">Ressources Humaines et chef marketing </h2>
               <hr class="my-4">
     
               <p>Pilotage du développement RH - (Analyse des besoins, Recrutement, Formation, Gestion des carrières)</p>
@@ -37,19 +37,19 @@ require_once 'inc/header.php';
         </div>
 
         <div class= "col-md-4">
-             <p><img src="Images\icon\company50.png" alt="">Hexagonal Consulting</p>
+             <p class="mts"><img src="Images\icon\company50.png" alt="">Hexagonal Consulting</p>
              <p><img src="Images\icon\marker.png" alt="">Télétravail</p>
              <p><img src="Images\icon\calendar.png" alt="">janvier 2018 - avril 2019</p>
              <hr class="my-4">
              <img src="Images/icon/hashtag.png">
              <ul>  
-               <li class="hashtag">Opérationnel</li>
-               <li class="hashtag">Capacité d'analyse</li>
-               <li class="hashtag">Capacité à fédérer</li>
-               <li class="hashtag">Organisation</li>
-               <li class="hashtag">Ecoute</li>
-               <li class="hashtag">Communicative</li>
-               <li class="hashtag">Force de proposition</li>
+               <li class=" badge badge-dark">Opérationnel</li>
+               <li class="  badge badge-dark">Capacité d'analyse</li>
+               <li class=" badge badge-dark">Capacité à fédérer</li>
+               <li class=" badge badge-dark">Organisation</li>
+               <li class=" badge badge-dark">Ecoute</li>
+               <li class=" badge badge-dark">Communicative</li>
+               <li class=" badge badge-dark">Force de proposition</li>
              </ul>
         </div>
       </div>
@@ -61,7 +61,7 @@ require_once 'inc/header.php';
       <div class="row mbl bg-light">
     
         <div class="col-md-8">
-            <h2 class="h3-like">Entrepreneur</h2>
+            <h2 class="mts">Entrepreneur</h2>
             <p>Création SAS - Expertise en solutions informatiques</p>
             <p><img src="Images\icon\coin.png">CA de 310 000€ la 2e année</p>
             <hr class="my-4">
@@ -78,23 +78,23 @@ require_once 'inc/header.php';
 
 
           <div class="col-md-4">
-           <p><img src="Images\icon\company50.png" alt="">Hexagonal Consulting</p>
+           <p class="mts"><img src="Images\icon\company50.png" alt="">Hexagonal Consulting</p>
             <p><img src="Images\icon\marker.png" alt="">Télétravail</p>
            <p><img src="Images\icon\calendar.png" alt="">mars 2016 - décembre 2017</p>
             <hr class="my-4">
             <img src="Images/icon/hashtag.png">
              <ul>
-               <li class="hashtag">Office management</li>
-               <li class="hashtag">Prise de décision</li>
-               <li class="hashtag">Ressources humaines</li>
-              <li class="hashtag">Management d'équipe</li>
-              <li class="hashtag">Capacité à fédérer</li>
-              <li class="hashtag">Gestion de Projet</li>
-              <li class="hashtag">Force de proposition</li>
-              <li class="hashtag">Comptabilité</li>
-              <li class="hashtag">Reporting</li>
-              <li class="hashtag">Planning stratégique</li>
-              <li class="hashtag">Polyvalence</li>   
+               <li class=" badge badge-dark">Office management</li>
+               <li class=" badge badge-dark">Prise de décision</li>
+               <li class=" badge badge-dark">Ressources humaines</li>
+              <li class=" badge badge-dark">Management d'équipe</li>
+              <li class=" badge badge-dark">Capacité à fédérer</li>
+              <li class=" badge badge-dark">Gestion de Projet</li>
+              <li class=" badge badge-dark">Force de proposition</li>
+              <li class=" badge badge-dark">Comptabilité</li>
+              <li class=" badge badge-dark">Reporting</li>
+              <li class=" badge badge-dark">Planning stratégique</li>
+              <li class=" badge badge-dark">Polyvalence</li>   
             </ul>
           </div> 
           
@@ -110,7 +110,7 @@ require_once 'inc/header.php';
 
       <div class="row mbl bg-light">
         <div class="col-md-8">
-              <h2 class="h3-like">Entrepreneur</h2>
+              <h2 class="mts">Entrepreneur</h2>
               <p>Création SAS - Vente de matériels de loisirs créatifs en ligne</p>
               <p><img src="Images\icon\coin.png">CA: 57 000€ en 6 mois</p>
               <p><img src="Images\icon\coin.png">CA: 156 000€ la 1ère année</p>
@@ -127,20 +127,20 @@ require_once 'inc/header.php';
         </div>
 
         <div class="col-md-4">  
-              <p><img src="Images\icon\company50.png" alt=""> A Very Bad Sheep</p>
+              <p class="mts"><img src="Images\icon\company50.png" alt=""> A Very Bad Sheep</p>
               <p><img src="Images\icon\marker.png" alt="">Dreux</p>
               <p><img src="Images\icon\calendar.png" alt="">février 2013 - janvier 2016</p>
               <hr class="my-4">
               <img src="Images/icon/hashtag.png">
               <ul>
-                 <li class="hashtag">Autodidacte</li>
-                <li class="hashtag">Capacité d'analyse</li>
-                <li class="hashtag">Adaptabilité</li>
-                <li class="hashtag">Persévérance</li>
-                <li class="hashtag">Rigueur</li>
-                <li class="hashtag">Organisation</li>
-                <li class="hashtag">Gestion du stress</li>
-                <li class="hashtag">Créativité</li> 
+                <li class=" badge badge-dark">Autodidacte</li>
+                <li class=" badge badge-dark">Capacité d'analyse</li>
+                <li class=" badge badge-dark">Adaptabilité</li>
+                <li class=" badge badge-dark">Persévérance</li>
+                <li class=" badge badge-dark">Rigueur</li>
+                <li class=" badge badge-dark">Organisation</li>
+                <li class=" badge badge-dark ">Gestion du stress</li>
+                <li class=" badge badge-dark ">Créativité</li> 
               </ul>
         </div>
       </div>
@@ -149,7 +149,7 @@ require_once 'inc/header.php';
       <!--  -->
       <div class="row mbl bg-light ">
         <div class="col-md-8">
-             <h2 class="h3-like">Assistante Acquisition</h2>
+             <h2 class="h2-like">Assistante Acquisition</h2>
                   
              <hr class="my-4">
              <p>Gestion administrative et commerciale: Lien avec les achats et mise en place d’une politique de prix</p>
@@ -166,17 +166,17 @@ require_once 'inc/header.php';
              <hr class="my-4">
              <img src="Images/icon/hashtag.png">
              <ul>
-              <li class="hashtag">Autonomie</li>
-              <li class="hashtag">Rigueur</li>
-              <li class="hashtag">Organisation</li>
-              <li class="hashtag">Adaptabilité</li>
-              <li class="hashtag">Multitâche</li>
-              <li class="hashtag">Capacité d'analyse</li>
-             <li class="hashtag">Gestion du stress</li>
-             <li class="hashtag">Réactivité</li>
-             <li class="hashtag">Créativité</li>
-             <li class="hashtag">Persévérance</li>
-             <li class="hashtag">Microsoft Excel</li> 
+              <li class=" badge badge-dark">Autonomie</li>
+              <li class=" badge badge-dark">Rigueur</li>
+              <li class=" badge badge-dark">Organisation</li>
+              <li class=" badge badge-dark">Adaptabilité</li>
+              <li class=" badge badge-dark">Multitâche</li>
+              <li class=" badge badge-dark">Capacité d'analyse</li>
+             <li class=" badge badge-dark">Gestion du stress</li>
+             <li class=" badge badge-dark">Réactivité</li>
+             <li class=" badge badge-dark">Créativité</li>
+             <li class=" badge badge-dark">Persévérance</li>
+             <li class=" badge badge-dark">Microsoft Excel</li> 
              </ul>
             
         </div>

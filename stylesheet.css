@@ -330,15 +330,15 @@ align-items: center;
 	background:#f8f9fa;
 }
 
-.hashtag{
-	font-size:0,75rem;
-}
+
+
+
 /* footer */
 
 
 
  /* ************************************************contactform ****************************************************/
-.divform{
+.divform, .exp{
 	 background: #f8f9fa ;
 	
  }

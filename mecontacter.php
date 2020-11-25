@@ -112,7 +112,7 @@ require_once 'inc/header.php';
     <div class="row justify-content-around bg-light">
        <div class="localisation cold-md-6 ptm">
 
-       <h2>Prise de contact</h2>
+       <h1>Prise de contact</h1>
        <hr class="my-4">
 
         <table class="mbs">

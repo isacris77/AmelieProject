@@ -25,7 +25,7 @@ if(estConnecte()){
 
 
 // 1 - traitement du formulaire
-debug($_POST);
+// debug($_POST);
 
 if (!empty($_POST)){ 
 

@@ -6,15 +6,14 @@
   <footer class="site-footer bg-light">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-md-6">
             <h6>A propos</h6>
-            <p class="text-justify">Amelie Nadalini SAS<i>Office manager </i></p>
-            <p> Adresse : 5 Av. Ingres 75016 Paris</p>
-            <p>Numéro de SIRET : 83210253700012</p>
+            <p class="text-justify">Amelie Nadalini SAS. <i>Office manager</i>. Adresse : 5 Av. Ingres 75016 Paris. Numéro de SIRET : 83210253700012</p>
+            
 
           
 
-          <div class="col-xs-6 col-md-3">
+          <div class=" col-md-3">
             <h6>Liens</h6>
             <ul class="footer-links">
               <li><a href="index.php">Accueil</a></li>
