@@ -13,7 +13,7 @@ function debug($var){
 // fonction qui indique si l'internaute est connecté
 
 function estConnecte(){
-    if (isset($_SESSION['membreun'])){ 
+    if (isset($_SESSION['membre'])){ 
 
 
         return true; 
@@ -28,7 +28,7 @@ function estConnecte(){
 //fonction qui indique si le membre connecté est administrateur 
 
 function estadmin(){ 
-    if (estconnecte() && $_SESSION['membreun']['statut'] == 1 ){
+    if (estconnecte() && $_SESSION['membre']['statut'] == 1 ){
         return true; 
     } else{
         return false; 

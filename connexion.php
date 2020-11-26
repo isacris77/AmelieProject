@@ -24,8 +24,7 @@ if(estConnecte()){
 
 
 
-// 1 - traitement du formulaire
-// debug($_POST);
+
 
 if (!empty($_POST)){ 
 
@@ -90,8 +89,8 @@ require_once 'inc/header.php';
 <div class="container">
 <h1 class=" ptxxl">Connexion</h1>
 <?php
-echo $message; // pour les messages de deconnexion 
-echo $contenu; // pour les messages de connexion
+echo $message; 
+echo $contenu; 
 ?>
     <form action="" method="post">
 

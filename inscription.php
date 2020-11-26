@@ -51,12 +51,11 @@ if(!empty($_POST)){
 
 
             //------------
-            // S'il n'y a plus d'erreur sur le formulaire, on vérifie si le pseudo existe ou pas avant d'inscrire l'internaute en BDD :
 
 
                 if(empty($contenu)){ 
 
-                    // on vérifie le pseudo en BDD :
+                 
                         $resultat = executeRequete("SELECT * FROM membre WHERE pseudo = :pseudo",array(':pseudo' => $_POST['pseudo']));
 
                  if ($resultat->rowCount() > 0 ){ 
@@ -64,7 +63,7 @@ if(!empty($_POST)){
 
 
                  } else {
-                     // sinon on fait l'inscription en BDD
+                 
                     $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT); 
                     $succes=executeRequete(
                         "INSERT INTO membre (pseudo, mdp, nom, prenom, email, adresse, code_postal, ville, statut) VALUES (:pseudo, :mdp, :nom, :prenom, :email, :adresse, :code_postal, :ville, :statut) ", 

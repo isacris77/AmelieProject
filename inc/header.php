@@ -37,7 +37,7 @@
         
 
 
-          <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes domaines de compétences
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,7 +71,7 @@
 
                 
                 if (estAdmin()) { // si membre est administrateur
-                    echo '<li><a href=" ' . RACINE_SITE . 'admin/gestion_boutique.php" class="nav-link">Gestion de la boutique</a></li>';
+                    
                     echo '<li><a href=" ' . RACINE_SITE . 'admin/gestion_membre.php" class="nav-link">Gestion des membres</a></li>';
 
                

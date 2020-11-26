@@ -3,14 +3,14 @@ require_once 'inc/init.php';
 
 
 
-// 1 -  Si le visiteur n'est pas connecté, vous le redirigez vers la page de connexion
+
 if(!estConnecte()) {
     header('location:connexion.php');  
     exit();
 }
 
 
-// 3 - Suppression du compte 
+
 
 if(isset($_GET['action']) && $_GET['action'] == 'supprimer'){ 
 
@@ -66,7 +66,4 @@ if(estAdmin()) {
 
 <?php
 require_once 'inc/footer.php'; 
-
-
-
 
