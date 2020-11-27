@@ -14,7 +14,7 @@ if(!estConnecte()) {
 
 if(isset($_GET['action']) && $_GET['action'] == 'supprimer'){ 
 
-    $id_membre = $_SESSION['membre'] ['id_membre'];
+    $id_membre = $_SESSION['membre']['id_membre'];
 
     $supprimer = executeRequete ("DELETE FROM membre WHERE id_membre = $id_membre");
     session_destroy(); 

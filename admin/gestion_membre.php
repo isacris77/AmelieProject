@@ -10,7 +10,7 @@ if(!estAdmin())
 	exit();
 }
 
-:
+
 if(isset($_GET['action']) && $_GET['action'] == "supprimer_membre" && isset($_GET['id_membre']))
 {	
 	if ($_GET['id_membre'] != $_SESSION['membre']['id_membre']){
