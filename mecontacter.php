@@ -213,7 +213,7 @@ require_once 'inc/header.php';
                 <hr class="my-4">
                
                
-                <input type="submit" name="submitmessage" ></input>
+                <input class="btn btn-info mbl" type="submit" name="submitmessage" ></input>
 
                 </div>
                

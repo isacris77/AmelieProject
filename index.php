@@ -23,7 +23,7 @@ require_once 'inc/header.php';
           <li>Le manque de moyen</li>
           <li>L'absence de soutien</li>
         </ul>
-        <p>Je vous aide à vous concentrer sur votre activité commerciale en prenant en charge un bon nombre de fonctions et de responsabilités (gestion administrative du personnel, gestion des services généraux, suivi des budgets, gestion des flux d’information,communication et stratégie digitale etc.).</p>
+        <p>Je vous aide à vous concentrer sur votre activité commerciale en prenant en charge un bon nombre de fonctions et de responsabilités (gestion administrative du personnel, gestion des services généraux, suivi des budgets, gestion des flux d’information,communication et stratégie digitale.</p>
       
       </div>
 
